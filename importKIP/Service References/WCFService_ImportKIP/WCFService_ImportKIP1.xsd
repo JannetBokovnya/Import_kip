@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:element name="GetDataMGListKIP">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataMGListKIPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetDataMGListKIPResult" nillable="true" type="q1:DataMGList_KIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataThreadsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inKeyMg" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataThreadsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetDataThreadsListResult" nillable="true" type="q2:DataThreadsList_result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataKipList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inKeyThread" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataKipListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetDataKipListResult" nillable="true" type="q3:KipDataList_result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="impKey" type="xs:double" />
+        <xs:element minOccurs="0" name="typeOfImport" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fileName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ImportFileResult" nillable="true" type="q4:StatusAnswer_ImportKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImpLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="keyJornal" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImpLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetImpLogResult" nillable="true" type="q5:ImpLogKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImpAnalyzeFileLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="keyJornal" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImpAnalyzeFileLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetImpAnalyzeFileLogResult" nillable="true" type="q6:ImpLog_resulAnalyzetKipFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataKipListBD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="keyJornal" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataKipListBDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetDataKipListBDResult" nillable="true" type="q7:KipDataListBD_result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataKipListFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="keyJornal" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataKipListFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetDataKipListFileResult" nillable="true" type="q8:KipDataListFile_result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportKipMatching">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="in_nVTDMakingKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="in_Filekey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="in_DBKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="typeLink" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportKipMatchingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ImportKipMatchingResult" nillable="true" type="q9:KeyBoundResultKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportKipMatchingAuto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="in_nVTDMakingKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportKipMatchingAutoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ImportKipMatchingAutoResult" nillable="true" type="q10:StatusAnswer_ImportKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportKipMeasurement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="in_nJournalKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportKipMeasurementResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ImportKipMeasurementResult" nillable="true" type="q11:StatusAnswer_ImportKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="KipIsHide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="in_nJournalKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="in_nKipKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isHide" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="KipIsHideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="KipIsHideResult" nillable="true" type="q12:StatusAnswer_ImportKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="KipIsHideBD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="in_nJournalKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="in_nKipKeyBD" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isHide" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="KipIsHideBDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="KipIsHideBDResult" nillable="true" type="q13:StatusAnswer_ImportKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveBound">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="keyImport" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="in_Filekey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveBoundResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="RemoveBoundResult" nillable="true" type="q14:RemoveBoundKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetKIPMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="in_nVTDMakingKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetKIPMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetKIPMappingResult" nillable="true" type="q15:KeyBoundResultKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteKipMeasurement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="jornalKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteKipMeasurementResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="DeleteKipMeasurementResult" nillable="true" type="q16:StatusAnswer_ImportKIP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSec_Param">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="key" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSec_ParamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetSec_ParamResult" nillable="true" type="q17:ParamSecList_result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

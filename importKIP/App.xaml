@@ -1,0 +1,50 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:local="clr-namespace:ImportKIP"
+              xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             x:Class="ImportKIP.App"  >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Style/Button.Style.xaml"/>
+                <ResourceDictionary Source="Style/TextBox.Style.xaml"/>
+                <ResourceDictionary Source="Style/ComboBox.Style.xaml" />
+              <ResourceDictionary Source="Style/RadGridView.Style.xaml"/>
+                <ResourceDictionary Source="Style/LabelInGroup.xaml"/>               
+                <ResourceDictionary Source="Style/TextBlock.Style.xaml"/>
+                <ResourceDictionary Source="Style/ResourcesKIP.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+        <!--<local:ResProvider x:Key="ResProvider" ></local:ResProvider>-->
+
+        <!--вынесены все стили общие для контролов, что бы не писать для каждого контрола один и тот же стиль-->
+        <!--<Style TargetType="telerik:RadButton">
+            <Setter Property="Style" Value="{StaticResource RadButtonStyle1}" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Style" Value="{StaticResource TextBoxStyle1}" />
+        </Style>
+        <Style TargetType="telerik:RadComboBox">
+            <Setter Property="ItemContainerStyle" Value="{StaticResource RadComboBoxItemStyle}" />
+            <Setter Property="Style" Value="{StaticResource RadComboBoxStyle1}" />
+        </Style>-->
+        
+    </Application.Resources>
+</Application>
+  
+        <!--<Style x:Key="xGridViewRowStyle" TargetType="telerik:GridViewRow">
+            <Setter Property="Background" Value="#f9f9f9" />
+        </Style>-->
+
+
+
+
+ <!--<Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Style" Value="{StaticResource TextBox_IttStyle}" />
+        </Style>
+        <Style TargetType="telerik:RadComboBox">
+            <Setter Property="ItemContainerStyle" Value="{StaticResource RadComboBox_IttItemStyle}" />
+            <Setter Property="Style" Value="{StaticResource RadComboBox_IttStyle}" />
+        </Style>-->

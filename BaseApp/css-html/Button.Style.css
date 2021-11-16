@@ -1,0 +1,63 @@
+
+.RadButton_Flash, .RadButton_Flash .rbDecorated {
+    font-family:Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    color: #5c5c5c;
+}
+
+.RadButton_Flash.rbDisabled, .RadButton_Flash.rbDisabled .rbDecorated {
+    font-family:Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    color: #d9d9d9; 
+    opacity: 1;
+}
+
+.RadButton_Flash.rbSkinnedButton,
+.RadButton_Flash.rbVerticalButton {
+    behavior: url(../../../Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0;
+    background-color: #fafafa;
+}
+    .RadButton_Flash.rbSkinnedButton:hover,
+    .RadButton_Flash.rbVerticalButton:hover {
+        border: 1px solid #ffd869 !important ;
+        background-color: #fff6dd !important;
+    }
+    .RadButton_Flash.rbSkinnedButton:focus,
+    .RadButton_Flash.rbVerticalButton:focus {
+        border: 1px solid #ffd869;
+        outline:0;
+    }
+
+    .RadButton_Flash.rbSkinnedButton:active,
+    .RadButton_Flash.rbVerticalButton:active {
+        border: 1px solid #ffd869;
+    }
+
+    .RadButton_Flash.rbSkinnedButton.rbDisabled,
+    .RadButton_Flash.rbVerticalButton.rbDisabled {
+        border: 1px solid #eaeaea !important;
+        background-color: #f7f7f7 !important;
+        color: #d9d9d9;
+    }
+
+        .RadButton_Flash.rbSkinnedButton.rbDisabled:hover,
+        .RadButton_Flash.rbVerticalButton.rbDisabled:hover {
+            border: 1px solid #eaeaea;
+            background-color: #f7f7f7 !important;
+            color: #d9d9d9;
+
+        } 
+
+
+
+.RadButton_Flash.rbVerticalButton {
+    padding: 0 !important; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}

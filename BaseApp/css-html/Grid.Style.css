@@ -1,0 +1,390 @@
+.RadGrid_Flash {
+    border:1px solid #c0c0c0;
+    background-color:#f7f7f7;
+    color:#5c5c5c;
+    font:normal 11px "Tahoma";
+    line-height: 16px;
+}
+
+
+.RadGrid_Flash .rgMasterTable,.RadGrid_Flash .rgDetailTable,.RadGrid_Flash .rgGroupPanel table,
+.RadGrid_Flash .rgCommandRow table,.RadGrid_Flash .rgEditForm table,.RadGrid_Flash .rgPager table {
+    font:normal 11px "Tahoma";
+    line-height: 16px;
+}
+
+/* на что вли€ет не нашел. ќставл€ю красный цвет, чтобы когда вылезло тут же заметить и поправить*/
+.RadGrid_Flash .rgInput {
+    background-color:white;
+    border:1px solid Red;
+    color:#5c5c5c;
+}
+.rgHeaderWrapper .rgHeaderDiv {
+    border-color:Red
+}
+
+.GridToolTip_Flash {
+    font:normal 11px "Tahoma";
+    line-height: 16px;
+}
+
+.RadGrid_Flash .rgHeader:first-child,.RadGrid_Flash th.rgResizeCol:first-child,.RadGrid_Flash .rgFilterRow>td:first-child,
+.RadGrid_Flash .rgRow>td:first-child,.RadGrid_Flash .rgAltRow>td:first-child{border-left-width:0;padding-left:8px}
+
+.RadGrid_Flash .rgSave,.RadGrid_Flash .rgAdd,.RadGrid_Flash .rgRefresh,.RadGrid_Flash .rgEdit,.RadGrid_Flash .rgDel,.RadGrid_Flash .rgFilter,
+.RadGrid_Flash .rgExpand,
+.RadGrid_Flash .rgCollapse,.RadGrid_Flash .rgSortAsc,.RadGrid_Flash .rgSortDesc,.RadGrid_Flash .rgUpdate,.RadGrid_Flash .rgCancel,
+.RadGrid_Flash .rgUngroup,.RadGrid_Flash .rgExpXLS,.RadGrid_Flash .rgExpDOC,.RadGrid_Flash .rgExpPDF,.RadGrid_Flash .rgExpCSV {
+    background-image:url('Grid/sprite.gif')
+}
+
+.rgTwoLines .rgHeaderDiv{background-position:0 -7550px}
+
+
+.RadGrid_Flash .rgHeader,.RadGrid_Flash th.rgResizeCol,.RadGrid_Flash .rgHeaderWrapper {
+    border:solid #c0c0c0;border-width:0 0 1px 1px;background:0 -2300px repeat-x #c3d8f1 url('Grid/sprite.gif')
+}
+
+.RadGrid_Flash .rgMultiHeaderRow th.rgHeader,.RadGrid_Flash .rgMultiHeaderRow th.rgResizeCol{border:solid #c0c0c0;border-width:0 0 1px 1px}
+
+.RadGrid_Flash th.rgSorted{border-bottom-color:#ff9b35;background-color:#ffca5e;background-position:0 -2600px}
+
+.RadGrid_Flash .rgHeader{color:#c0c0c0}
+                                                                                                              
+.RadGrid_Flash .rgHeader a{color:#c0c0c0}
+
+.RadGrid_Flash th.rgSorted,.RadGrid_Flash th.rgSorted a{color:#000}
+
+.RadGrid_Flash .rgRow td,.RadGrid_Flash .rgAltRow td,.RadGrid_Flash .rgEditRow td,.RadGrid_Flash .rgFooter td{border-style:solid;border-width:0 0 1px 1px}
+
+.RadGrid_Flash .rgRow td,.RadGrid_Flash .rgAltRow td{border-color:#e6e6e6}
+
+.RadGrid_Flash .rgRow .rgSorted,.RadGrid_Flash .rgAltRow .rgSorted{background-color:#c0c0c0}
+
+/*.RadGrid_Flash .rgSelectedRow .rgSorted,.RadGrid_Flash .rgActiveRow .rgSorted,.RadGrid_Flash .rgHoveredRow .rgSorted,.RadGrid_Flash .rgEditRow .rgSorted{background-color:transparent}*/
+
+.RadGrid_Flash .rgRow a,.RadGrid_Flash .rgAltRow a,.RadGrid_Flash .rgEditRow a,.RadGrid_Flash .rgFooter a,.RadGrid_Flash .rgEditForm a {
+    color: #0096db;
+}
+
+.RadGrid_Flash .rgMasterTable .rgSelectedCell,.RadGrid_Flash .rgSelectedRow{background:#ffcb60 0 -3900px repeat-x url('Grid/sprite.gif')}
+
+*+html .RadGrid_Flash .rgSelectedRow .rgSorted{background-color:#ffcb60}
+
+html .RadGrid_Flash .rgSelectedRow .rgSorted{background-color:#ffcb60}
+
+.RadGrid_Flash .rgMasterTable .rgActiveCell,.RadGrid_Flash .rgActiveRow,.RadGrid_Flash .rgHoveredRow{background:#ecf4ff}
+
+*+html .RadGrid_Flash .rgActiveRow .rgSorted,*+html .RadGrid_Flash .rgHoveredRow .rgSorted{background-color:#ecf4ff}
+
+.RadGrid_Flash .rgEditRow{background:#ffe5ad}
+
+*+html .RadGrid_Flash .rgEditRow .rgSorted,* html .RadGrid_Flash .rgEditRow .rgSorted{background-color:#ffe5ad}
+
+.RadGrid_Flash .rgSelectedRow td,.RadGrid_Flash .rgActiveRow td,.RadGrid_Flash .rgHoveredRow td,.RadGrid_Flash .rgEditRow td{border-left-width:0;padding-left:8px}
+
+/* .RadGrid_Flash .rgSelectedRow td{border-bottom-color:#ff9b35} */
+
+.RadGrid_Flash .rgActiveRow td,.RadGrid_Flash .rgHoveredRow td,.RadGrid_Flash .rgEditRow td{border-bottom-color:#d0d7e5}
+
+.RadGrid_Flash .rgDrag{background-image:url('Grid/rgDrag.gif')}
+
+.RadGrid_Flash .rgFooterDiv,.RadGrid_Flash .rgFooter,.RadGrid_Flash .rgFooterWrapper{background:#9ab5db 0 -6500px repeat-x url('Grid/sprite.gif')}
+
+.RadGrid_Flash .rgFooter td,.RadGrid_Flash .rgFooterWrapper{border-width:1px 0;border-color:#c0c0c0}
+
+.RadGrid_Flash .rgFooterWrapper .rgFooter td{border-bottom:0}
+
+.RadGrid_Flash .rgFooterWrapper{border-bottom:1px solid #fff}
+
+.RadGrid_Flash .rgPager .rgStatus{border:1px solid;border-width:1px 1px 0 0;border-color:#c0c0c0}
+
+.RadGrid_Flash .rgStatus div{background-image:url('Common/loading_small.gif')}
+
+
+
+.RadGrid_Flash .rgPager{background:Red 0 -7000px repeat-x url('Grid/sprite.gif');color:#c0c0c0}
+
+
+ .RadGrid_Flash .rgInfoPart{ color: #c0c0c0;}
+.RadGrid_Flash .rgPageFirst{
+    background:#fafafa url('Grid/first-16.png') center !important;
+    behavior: url(~/Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0 !important;
+}                          
+    .RadGrid_Flash .rgPageFirst:hover {
+         background:#fff6dd url('Grid/first-16.png') center !important;
+         border: 1px solid #ffd869 !important ;
+    }
+.RadGrid_Flash .rgPagePrev{
+    background:#fafafa url('Grid/previous-16.png') center !important;
+    behavior: url(~/Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0 !important;
+}
+    .RadGrid_Flash .rgPagePrev:hover {
+         background:#fff6dd url('Grid/previous-16.png') center !important;
+         border: 1px solid #ffd869 !important ;
+    }
+.RadGrid_Flash .rgPageNext {
+    background:#fafafa repeat-x url('Grid/next-16.png') center !important;
+    behavior: url(~/Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0 !important;
+}
+    .RadGrid_Flash .rgPageNext:hover {
+         background:#fff6dd url('Grid/next-16.png') center !important;
+         border: 1px solid #ffd869 !important ;
+    }
+.RadGrid_Flash .rgPageLast {
+    background:#fafafa repeat-x url('Grid/last-16.png') center !important;
+    behavior: url(~/Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0 !important;
+}
+    .RadGrid_Flash .rgPageLast:hover {
+         background:#fff6dd url('Grid/last-16.png') center !important;
+         border: 1px solid #ffd869 !important ;
+    }
+
+.RadGrid_Flash .rgPager .rgPagerButton{border-color:#c0c0c0;background:#e8f1fc repeat-x 0 -1550px url('Grid/sprite.gif');font:normal 11px "Tahoma";color:#5f5f5f}
+
+
+
+.RadGrid_Flash .rgNumPart a{color:#5c5c5c}
+.RadGrid_Flash .rgNumPart a:hover,.RadGrid_Flash .rgNumPart a.rgCurrentPage,
+.RadGrid_Flash .rgNumPart a:hover span,.RadGrid_Flash .rgNumPart a.rgCurrentPage span {
+    /*border: 1px solid #ffd869 !important ;*/
+    background-color: #fff6dd !important;
+}
+
+
+.RadGrid_Flash .rgHeader .rgSortAsc{background-position:3px -147px;height:10px}
+.RadGrid_Flash .rgHeader .rgSortDesc{background-position:3px -96px;height:10px}
+.GridReorderTop_Flash{height:12px;background:0 0 no-repeat url('Grid/sprite.gif')}
+.GridReorderBottom_Flash{height:12px;background:0 0 no-repeat url('Grid/sprite.gif');background-position:0 -50px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.RadGrid_Flash .rgFilterRow{background:#d6e5f3}
+.RadGrid_Flash .rgFilterRow td{border:solid #9eb6ce;border-width:0 0 1px 1px}
+.RadGrid_Flash .rgFilter{background-position:0 -300px}
+.RadGrid_Flash .rgFilter:hover{background-position:0 -350px}
+.RadGrid_Flash .rgFilterActive{background-position:0 -400px}
+.RadGrid_Flash .rgFilterActive:hover{background-position:0 -400px}
+.RadGrid_Flash .rgFiltered{background-position:0 -325px}
+.RadGrid_Flash .rgFiltered:hover{background-position:0 -375px}
+.RadGrid_Flash .rgFiltered.rgFilterActive{background-position:0 -425px}
+.RadGrid_Flash .rgFilterBox{border-color:#abc1de;font:normal 11px "Tahoma";color:#5f5f5f}
+.RadMenu_Flash .rgHCMClear,.RadMenu_Flash .rgHCMFilter{border-color:#a7bedb #7d98bd #a3bad8;background:#e8f1fc center -23px repeat-x url('FormDecorator/ButtonSprites.gif');color:#00156e;font-family:"Tahoma"}
+.RadMenu_Flash .rgHCMClear:hover,.RadMenu_Flash .rgHCMFilter:hover{border-color:#d8ca95 #b9a073 #c6ba9d;background-position:center -67px;background-color:#ffe18a;color:#000}
+.RadMenu_Flash_Context .rgFilterApply,.RadMenu_Flash_Context .rgFilterCancel{background-image:url('Common/radGradientButtonSprite.png');_background-image:none;border-color:#a7bedb;color:#00156e;background-color:#e8f1fc;background-image:linear-gradient(#e8f1fc 0,#e9f1fc 50%,#d2e1f4 50%,#e8f1fc 100%);font-family:"Tahoma";font-size:11px;color:#5f5f5f;border-color:#ccdbed #abc1de #abc1de #ccdbed}
+
+div.RadMenu_Flash_Context .rlbGroup{border-color:#c5c5c5}
+.GridContextMenu_Flash .rmLeftImage{background-image:url('Common/contextMenu.gif')}
+.GridContextMenu_Flash .rgHCMSortAsc .rmLeftImage{background-position:0 0}
+.GridContextMenu_Flash .rgHCMSortDesc .rmLeftImage{background-position:0 -40px}
+.GridContextMenu_Flash .rgHCMUnsort .rmLeftImage{background-position:0 -80px}
+.GridContextMenu_Flash .rgHCMGroup .rmLeftImage{background-position:0 -120px}
+.GridContextMenu_Flash .rgHCMUngroup .rmLeftImage{background-position:0 -160px}
+.GridContextMenu_Flash .rgHCMCols .rmLeftImage{background-position:0 -200px}
+.GridContextMenu_Flash .rgHCMFilter .rmLeftImage{background-position:0 -240px}
+.GridContextMenu_Flash .rgHCMUnfilter .rmLeftImage{background-position:0 -280px}
+.RadGrid_Flash .rgGroupPanel{border:0;border-bottom:1px solid #688caf;background:#ecf3fc}
+.RadGrid_Flash .rgGroupPanel td{border:0;padding:3px 4px;vertical-align:middle}
+.RadGrid_Flash .rgGroupPanel td td{padding:0}
+.RadGrid_Flash .rgGroupPanel .rgSortAsc{background-position:4px -144px}
+.RadGrid_Flash .rgGroupPanel .rgSortDesc{background-position:4px -94px}
+.RadGrid_Flash .rgUngroup{background-position:0 -7500px}
+.RadGrid_Flash .rgGroupItem{border:1px solid #c0c0c0;background:#e6ebf5 0 -1900px repeat-x url('Grid/sprite.gif');color:#c5c5c5}
+.RadGrid_Flash .rgGroupHeader{background:#d7e6f7;font-size:1.1em;line-height:21px;color:#5c5c5c}
+.RadGrid_Flash .rgGroupHeader td{border-top:1px solid #fcfcfd;border-bottom:1px solid #6f92b3;padding-left:8px}
+.RadGrid_Flash td.rgGroupCol,.RadGrid_Flash td.rgExpandCol{background:#d7e6f7 none;border-color:#d7e6f7}
+.RadGrid_Flash .rgGroupHeader .rgExpand{background-position:5px -495px}
+.RadGrid_Flash .rgGroupHeader .rgCollapse{background-position:3px -93px}
+.RadGrid_Flash .rgEditForm{border-bottom:1px solid #d0d7e5}
+.RadGrid_Flash .rgUpdate{background-position:0 -1800px}
+.RadGrid_Flash .rgCancel{background-position:0 -1850px}
+.RadGrid_Flash .rgDetailTable{border-color:#c0c0c0}
+.RadGrid_Flash .rgExpand{background-position:5px -496px}
+.RadGrid_Flash .rgCollapse{background-position:3px -94px}
+.RadGrid_Flash .rgCommandRow{background:#c4d9f1 0 -2099px repeat-x url('Grid/sprite.gif');color:#333}
+.RadGrid_Flash .rgCommandCell{border:0;padding:0}
+.RadGrid_Flash thead .rgCommandCell{border-bottom:1px solid #c0c0c0}
+.RadGrid_Flash .rgCommandTable{border:1px solid #9eb6ce}
+.RadGrid_Flash .rgCommandTable td{border:0;padding:2px 7px}
+.RadGrid_Flash .rgCommandRow a{color:#5c5c5c;text-decoration:none}
+.RadGrid_Flash .rgAdd{margin-right:3px;background-position:0 -1650px}
+.RadGrid_Flash .rgRefresh{margin-right:3px;background-position:0 -1600px}
+.RadGrid_Flash .rgEdit{background-position:0 -1700px}
+.RadGrid_Flash .rgDel{background-position:0 -1750px}
+.RadGrid_Flash .rgExpXLS,.RadGrid_Flash .rgExpDOC,.RadGrid_Flash .rgExpPDF,.RadGrid_Flash .rgExpCSV{background-image:url('Common/export.gif')}
+.RadGrid_Flash .rgExpXLS{background-position:0 0}
+.RadGrid_Flash .rgExpDOC{background-position:0 -50px}
+.RadGrid_Flash .rgExpPDF{background-position:0 -100px}
+.RadGrid_Flash .rgExpCSV{background-position:0 -150px}
+.rgCellSelectorArea_Flash,.GridRowSelector_Flash{background:#c0c0c0}
+.GridItemDropIndicator_Flash{border-top:1px dashed #c0c0c0}
+.GridToolTip_Flash{border:1px solid #c0c0c0;padding:3px;background:#d7e3f2;color:#333}
+.RadGridRTL_Flash .rgHeader:first-child,.RadGridRTL_Flash th.rgResizeCol:first-child,.RadGridRTL_Flash .rgFilterRow>td:first-child,.RadGridRTL_Flash .rgRow>td:first-child,
+.RadGridRTL_Flash .rgAltRow>td:first-child{border-left-width:1px;padding-left:7px}
+.RadGridRTL_Flash .rgGroupHeader .rgExpand{background-position:-20px -495px}
+.RadGridRTL_Flash .rgExpand{background-position:-20px -496px}
+
+
+
+
+
+
+ div.RadGrid_Flash .rgCommandRow {
+
+	background-image: none;
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash th.rgResizeCol {
+
+	height: 27px;
+
+	background-image: none;
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgHeader, .rgHeader {
+
+	font-weight: bold;
+
+	color: rgb(92, 92, 92);
+
+	font-family: Tahoma;
+
+	font-size: 11px;
+
+	height: 27px;
+
+	background-image: none;
+    /* background-color: rgb(247, 247, 247); */
+
+
+    background: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#f7f7f7));
+    background: -webkit-linear-gradient(#fafafa, #f7f7f7);
+    background: -moz-linear-gradient(top, #fafafa, #f7f7f7);
+    background: -ms-linear-gradient(#fafafa, #f7f7f7);
+    background: -o-linear-gradient(#fafafa, #f7f7f7);
+    background: linear-gradient(#fafafa, #f7f7f7);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#f7f7f7')"; 
+    zoom: 1;
+    position: relative;
+
+}
+
+ div.RadGrid_Flash .rgHeader a {
+
+	font-weight: bold;
+
+	color: rgb(92, 92, 92);
+
+	font-family: Tahoma;
+
+	font-size: 11px;
+
+}
+
+ div.RadGrid_Flash .rgFilterRow td {
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgRow td {
+
+	color: rgb(92, 92, 92);
+
+	font-size: 11px;
+
+	font-family: Tahoma;
+
+	width: 20px;
+
+	height: 27px;
+
+	background-color: rgb(255, 255, 255);
+
+}
+
+ div.RadGrid_Flash .rgSelectedRow td {
+
+	font-size: 11px;
+
+	font-family: Tahoma;
+
+	background-color: rgb(255, 242, 214);
+
+}
+
+ div.RadGrid_Flash .rgActiveRow td {
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+/* цвет дл€ наведенной строки*/
+div.RadGrid_Flash .rgHoveredRow td, div.RadGrid_Flash .rgRow:hover td, div.RadGrid_Flash .rgAltRow:hover td {
+
+	background-color: rgb(217, 217, 217);
+
+}
+
+ div.RadGrid_Flash .rgAltRow td {
+
+	color: rgb(92, 92, 92);
+
+	height: 27px;
+
+	font-family: Tahoma;
+
+	font-size: 11px;
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgAltRow {
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgFooter td {
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgPager {
+
+	background-image: none;
+
+	background-color: rgb(247, 247, 247);
+
+}
+

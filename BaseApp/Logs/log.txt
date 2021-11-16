@@ -1,0 +1,71 @@
+2016-06-30 13:58:21,271 [7] ERROR Auth [(null)] - System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'login'.
+   в System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   в System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   в System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   в System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   в System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   в System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   в System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   в System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   в System.Data.SqlClient.SqlConnection.Open()
+   в DBConn.SQLConn.ExecuteQuery[T](String query, DBParam[] args)
+   в App_Code.Admin_module_API.Auth.CheckUserLogin(String pCLogin) в c:\My_Work\DotNet\Import_kip_new\src_files\BaseApp\App_Code\Admin_module_API\Auth\Auth.cs:строка 231
+ClientConnectionId:b7cb8166-31cd-4b86-aacd-0045993ac8fa
+Error Number: 18456, State: 1, Class: 14
+2016-12-06 18:50:18,081 [7] ERROR Auth [(null)] - System.InvalidCastException: Невозможно выполнить приведение данного объекта из DBNull к другому типу.
+   в System.DBNull.System.IConvertible.ToInt64(IFormatProvider provider)
+   в System.Convert.ToInt64(Object value)
+   в App_Code.Admin_module_API.Auth.AuthUser(String pCUser, String pCPassword) в c:\My_Work\DotNet\Import_kip_new\src_files\BaseApp\App_Code\Admin_module_API\Auth\Auth.cs:строка 168
+2016-12-09 14:54:10,956 [6] ERROR Auth [(null)] - System.InvalidCastException: Невозможно выполнить приведение данного объекта из DBNull к другому типу.
+   в System.DBNull.System.IConvertible.ToInt64(IFormatProvider provider)
+   в System.Convert.ToInt64(Object value)
+   в App_Code.Admin_module_API.Auth.AuthUser(String pCUser, String pCPassword) в c:\My_Work\DotNet\Import_kip_new\src_files\BaseApp\App_Code\Admin_module_API\Auth\Auth.cs:строка 168
+2017-01-12 16:24:23,662 [7] ERROR Auth [(null)] - DBConn.Classes.DbConnException: Ошибка DbConn: не прошла аутентификация в БД. The transaction log for database 'DB_LIB' is full due to 'LOG_BACKUP'.  ---> System.Data.SqlClient.SqlException: The transaction log for database 'DB_LIB' is full due to 'LOG_BACKUP'. 
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в DBConn.SQLConn.SetCurrentSession(IDbConnection conn, String query, DBParam[] args, IDbTransaction tr)
+   --- Конец трассировки внутреннего стека исключений ---
+   в DBConn.SQLConn.SetCurrentSession(IDbConnection conn, String query, DBParam[] args, IDbTransaction tr)
+   в DBConn.SQLConn.ExecuteQuery(String query, Boolean isReturnTable, DBParam[] args)
+   в App_Code.Admin_module_API.Auth.AuthUser(String pCUser, String pCPassword) в c:\My_Work\DotNet\Import_kip_new\src_files\BaseApp\App_Code\Admin_module_API\Auth\Auth.cs:строка 161
+2017-01-12 16:24:34,550 [7] ERROR Auth [(null)] - DBConn.Classes.DbConnException: Ошибка DbConn: не прошла аутентификация в БД. The transaction log for database 'DB_LIB' is full due to 'LOG_BACKUP'.  ---> System.Data.SqlClient.SqlException: The transaction log for database 'DB_LIB' is full due to 'LOG_BACKUP'. 
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в DBConn.SQLConn.SetCurrentSession(IDbConnection conn, String query, DBParam[] args, IDbTransaction tr)
+   --- Конец трассировки внутреннего стека исключений ---
+   в DBConn.SQLConn.SetCurrentSession(IDbConnection conn, String query, DBParam[] args, IDbTransaction tr)
+   в DBConn.SQLConn.ExecuteQuery(String query, Boolean isReturnTable, DBParam[] args)
+   в App_Code.Admin_module_API.Auth.AuthUser(String pCUser, String pCPassword) в c:\My_Work\DotNet\Import_kip_new\src_files\BaseApp\App_Code\Admin_module_API\Auth\Auth.cs:строка 161
+2017-01-12 16:24:40,883 [8] ERROR Auth [(null)] - DBConn.Classes.DbConnException: Ошибка DbConn: не прошла аутентификация в БД. The transaction log for database 'DB_LIB' is full due to 'LOG_BACKUP'.  ---> System.Data.SqlClient.SqlException: The transaction log for database 'DB_LIB' is full due to 'LOG_BACKUP'. 
+   в System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   в System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   в System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   в System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   в System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   в System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   в System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   в DBConn.SQLConn.SetCurrentSession(IDbConnection conn, String query, DBParam[] args, IDbTransaction tr)
+   --- Конец трассировки внутреннего стека исключений ---
+   в DBConn.SQLConn.SetCurrentSession(IDbConnection conn, String query, DBParam[] args, IDbTransaction tr)
+   в DBConn.SQLConn.ExecuteQuery(String query, Boolean isReturnTable, DBParam[] args)
+   в App_Code.Admin_module_API.Auth.AuthUser(String pCUser, String pCPassword) в c:\My_Work\DotNet\Import_kip_new\src_files\BaseApp\App_Code\Admin_module_API\Auth\Auth.cs:строка 161

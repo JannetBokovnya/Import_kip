@@ -1,0 +1,206 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TopMasterPage.master.cs"
+    Inherits="System_TopMasterPage" %>
+
+<%@ Register TagPrefix="uc" TagName="Toolbar" Src="~/UserControls/Toolbar/Toolbar.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Player" Src="~/UserControls/VideoPlayer/JWPlayer.ascx" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:PlaceHolder runat="server">
+        <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-store">
+        <meta http-equiv="Cache-Control" content="must-revalidate">
+        <meta http-equiv="Cache-Control" max-age="-1">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Pragma" content="no-store">
+        <meta http-equiv="Expires" content="-1">
+        <meta name="http-equiv" content="Content-type: text/html; charset=UTF-8" />
+        
+        <% if (HttpContext.Current.IsDebuggingEnabled)
+           { %>
+            <link rel="stylesheet" href="../../css-html/style.css" type="text/css" />
+        <% }
+           else
+           { %>
+            <link rel="stylesheet" href="../../css-html/style.min.css" type="text/css" />
+        <% } %>
+
+        <script src="../../Scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../../Scripts/log4js/log4js-mini.js"></script>
+        <script type="text/javascript" src="../../UserControls/VideoPlayer/jwplayer.js"></script>
+
+        <script type="text/javascript">
+            //Global variable for flash modules
+            var flashvars = {};
+            flashvars.moduleName = getFolderName();
+            flashvars.lang = "<%= lang %>";
+            flashvars.serverName =   getServerName();
+            flashvars.serviceName =  getServiceName();
+
+            function getFolderName() {
+                var url = document.URL;
+                var searchWord = 'Modules/';
+                var index = url.indexOf(searchWord);
+                if (index > 0) {
+                    url = url.substring(index + searchWord.length);
+                    index = url.indexOf('/');
+                    if (index > 0) {
+                        url = url.substring(0, index);
+                    }
+                }
+
+                return url;
+            }
+
+            function getServerName() {
+                //debugger;
+                l_res = "http://" + "<%=Request.Url.Authority %>";
+                return l_res;
+            }
+
+            function getServiceName() {
+                //debugger;
+                var l_res = "<%=GetServiceName() %>";
+                return l_res;
+            }
+
+            function applicationLoaded() {
+                SetCtl(window);
+                return true;
+            }
+
+            function getAppPath() {
+                var l_res = '<% =Request.ApplicationPath.ToString() %>';
+                return l_res;
+            }
+
+            function windowLoad(p_cWindowName) {
+                window.open('', '_self', '');
+                _cWindowName = p_cWindowName;
+
+                if (getCookieByName(_WindowIsCleanStorage) == "true") {
+                    localStorage.clear();
+                }
+
+                windowRegister(_cWindowName, 'windowLoad');
+                GetListenerEvent();
+                setSessionStart();
+                receiveEvent();
+                ChekWindowStatus();
+                checkNewBookmarkFromCookies();
+                enableCNObserver();
+                SetInLabelModulesMenu();
+                //был закрыт
+                //checkTimeNotification();
+
+                //открыла для тестирования
+                //checkTimeNotification();
+
+                SetLocalStorageEvent();
+  
+                JLOG.info('Модуль загружен:' + p_cWindowName);
+            }
+
+
+            
+
+            //Обновление модуля из соседней вкладки с помощью window.open
+            //Example calling: CallFunctionFromAllOpenedWindows('alert', '"Summer, we are waiting for you."');
+            function CallFuncForAllOpenedWindowsFromFirstWindow(functionName, functionParams) {
+                var curWinStatus = getCookieByName(_WindowStatus);
+                if (curWinStatus != undefined) {
+                    l_r = JSON.parse(curWinStatus);
+                    var count = l_r.WindowStatus.length;
+
+                    if (count > 0) {
+                        if (l_r.WindowStatus[0].WindowName !== window.name) {
+                            return;
+                        }
+                    }
+
+                    var cmdStr = "javascript:" + functionName + "(" + functionParams + ")";
+
+                    for (var y = 0; y < count; y++) {
+                        window.open(cmdStr, l_r.WindowStatus[y].WindowName);
+                    }
+                }
+            }
+
+            function SetHdnWindowOpen(p_Value) {
+                if (document.getElementById('<%=hdnWindowOpen.ClientID %>').value != '' + p_Value + '') {
+                    document.getElementById('<%=hdnWindowOpen.ClientID %>').value = '' + p_Value + '';
+                    setTimeout(RestartOM, 1000);
+                }
+            }
+        </script>
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server" id="MasterBody" style="height: 100%; min-width: 1000px;" >
+    <form id="form1" runat="server">
+       <telerik:radskinmanager runat="server" id="RadSkinManager1" showchooser="false">
+       </telerik:radskinmanager>
+         <telerik:radscriptmanager id="radScriptManager" runat="server" enablescriptglobalization="true" EnablePageMethods="true"
+                enablescriptlocalization="true">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+            </Scripts>
+        </telerik:radscriptmanager> 
+
+        <div class="AllContent">
+            <div class="TopMenu">
+                <table style="width: 100%; table-layout:fixed;" cellspacing="0" cellpadding="0">
+                    <uc:Toolbar id="Toolbar" runat="server" />
+                </table>
+            </div>
+            <div class="BottonContent" onmousedown="javascript: CloseTelerikMouseClick();">
+                <div id="divContent" style="position: relative;"></div>
+                <div runat="server" class="panelMenu" id="divContextNavigation"></div>
+                <div id="divBookMark" class="panelMenu" runat="server">
+                </div>
+                <asp:contentplaceholder id="Body" runat="server">
+                </asp:contentplaceholder>
+            </div>
+        </div>
+        
+        <uc:Player runat="server"/>
+
+        <asp:UpdatePanel runat="server" ID="upUserInfo" UpdateMode="Conditional" ClientIDMode="Static">
+            <ContentTemplate>
+                <asp:hiddenfield id="hdnWindowOpen" runat="server" ClientIDMode="Static" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+        <asp:HiddenField ID="hdnUserFIO" runat="server" ClientIDMode="Static"/>
+        <asp:HiddenField ID="hdnCurrentCN" runat="server" ClientIDMode="Static"/>
+
+    </form>
+    <script type="text/javascript" language="javascript">
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+        function EndRequestHandler(sender, args) {
+            if (args.get_error() != undefined) {
+                args.set_errorHandled(true);
+            }
+        }
+        function CloseTelerikMouseClick() {
+            for (var i = 0; i < RadMenuItemIDs.length; i++) {
+                var menu = $find(RadMenuItemIDs[i]);
+                var openedItem = menu.get_openedItem();
+                if (openedItem != null) {
+                    openedItem.close();
+                    menu.set_clicked(false);
+                }
+            }
+            DeselectFilterMenu();
+        }
+    </script>
+    
+   
+</body>
+</html>

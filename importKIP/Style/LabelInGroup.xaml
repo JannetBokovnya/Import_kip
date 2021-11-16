@@ -1,0 +1,15 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <Style TargetType="telerik:Label" x:Key="LabelInGroupStyle">
+        <Setter Property="FontSize" Value="11"/>
+        <Setter Property="FontFamily" Value="Tahoma"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="#4c934d"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
+
+</ResourceDictionary>

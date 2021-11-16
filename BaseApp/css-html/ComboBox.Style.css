@@ -1,0 +1,76 @@
+.RadComboBoxDropDown_Flash .rcbHeader,.RadComboBoxDropDown_Flash .rcbFooter{color:#00156e;background-color:#c3d8f1}
+.RadComboBoxDropDown_Flash .rcbHeader{border-bottom-color:#868686}
+.RadComboBoxDropDown_Flash .rcbFooter{border-top-color:#868686}
+.RadComboBoxDropDown_Flash .rcbCheckAllItems,.RadComboBoxDropDown_Flash .rcbCheckAllItemsHovered{color:#00156e;background-color:#c3d8f1}
+.RadComboBoxDropDown_Flash .rcbMoreResults{border-color:#688caf;color:#00156e;background-color:#c3d8f1}
+.RadComboBoxDropDown_Flash .rcbMoreResults a{border-top-color:#00156e}
+
+.RadComboBoxDropDown_Flash{border-color:#868686;background:white;}
+
+/* свойства текста */
+.RadComboBox_Flash,
+.RadComboBox_Flash .rcbInput,
+.RadComboBoxDropDown_Flash {
+    color:#5c5c5c;
+    font-size:11px;
+    font-family: Tahoma;
+}
+    .RadComboBox_Flash .rcbEmptyMessage {
+        color: #a5a5a5;
+        font-style: italic;
+    }
+    .RadComboBox_Flash .rcbDisabled .rcbInput {
+        color: #c0c0c0;
+    }
+
+/* свойства инпута*/
+div.RadComboBox_Flash .rcbInputCell {
+    border: 1px solid #c0c0c0 !important;
+	background-image: none;
+	background-color: #fff;
+    line-height: normal !important;
+}
+    div.RadComboBox_Flash .rcbHovered .rcbInputCell,
+    div.RadComboBox_Flash .rcbFocused .rcbInputCell {
+        border: 1px solid #ffd869 !important;
+    }
+    div.RadComboBox_Flash .rcbDisabled .rcbInputCell {
+        border: 1px solid #dedede !important;
+    }
+/* свойства стрелки справа*/
+div.RadComboBox_Flash .rcbArrowCell {
+    border: 1px solid #c0c0c0 !important;
+    background-image: url('down.png');
+	background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    div.RadComboBox_Flash .rcbHovered .rcbArrowCell,
+    div.RadComboBox_Flash .rcbFocused .rcbArrowCell {
+	    border: 1px solid #ffd869 !important;
+	    background-color: #fff6dd;
+    }
+    div.RadComboBox_Flash .rcbDisabled .rcbArrowCell {
+	    border: 1px solid #dedede !important;
+	    background-color: #f7f7f7;
+    }
+
+.RadComboBox .rcbReadOnly td.rcbArrowCell a,
+div.RadComboBox_Flash .rcbArrowCell a {
+    width: 17px !important;
+}
+
+/* свойста айтема выпадающего списка*/
+div.RadComboBoxDropDown_Flash ul.rcbList li {
+    line-height: 23px;
+}
+    div.RadComboBoxDropDown_Flash ul.rcbList li.rcbHovered {
+        background: #f2f2f2;
+    }
+
+/* убирает вылазывающий текст за пределы input*/
+.RadComboBox table td.rcbInputCell, .RadComboBox .rcbInputCell .rcbInput {
+    box-sizing: border-box;
+}
+
+

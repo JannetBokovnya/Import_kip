@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b993d1be-a95a-4f45-a537-4fb61c0011a7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFService_ImportKIP.xsd" MetadataType="Schema" ID="fe3bcc5d-cfba-482c-8ef8-2a23367dbb46" SourceId="1" SourceUrl="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFService_ImportKIP1.xsd" MetadataType="Schema" ID="19599f87-8966-4a6b-a911-97c6b80c8a05" SourceId="1" SourceUrl="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCFService_ImportKIP2.xsd" MetadataType="Schema" ID="c492c7e4-ad6c-4fa9-b899-5bd3f28057b4" SourceId="1" SourceUrl="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFService_ImportKIP.wsdl" MetadataType="Wsdl" ID="fd74e6ef-a236-418b-8ef0-230699ca0114" SourceId="1" SourceUrl="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc?wsdl" />
+    <MetadataFile FileName="WCFService_ImportKIP.disco" MetadataType="Disco" ID="9f53bd06-b14f-4407-93f2-2056f428ef4d" SourceId="1" SourceUrl="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

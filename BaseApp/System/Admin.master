@@ -1,0 +1,177 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" 
+    Inherits="System_Admin" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9" >
+	<meta name="PageName" content="Authorization">
+	
+    <script src="../Scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="../Scripts/Observer/Observer.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../Scripts/log4js/log4js-mini.js"></script>
+    <script src="../Scripts/JSON2/JSON2.min.js" type="text/javascript"></script>
+    <script src="../Scripts/Common/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css-html/style.css" type="text/css" />
+    <style type="text/css">
+        html, body, form
+        {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        * html #maket
+        {
+            height: 100%;
+        }
+
+        #footer
+        {
+            clear: both;
+            height: 164px;
+            margin-top: -164px;
+            position: absolute;
+            left: 0%;
+            top: 100%;
+            margin-left: 0px;
+            margin-top: -164px;
+            width: 100%;
+            padding: 15px;
+        }
+        #leftFooter
+        {
+            position: relative;
+            float: left;
+            width: 383px;
+
+        }
+        
+        #rightFooter
+        {
+            position:absolute;
+            right: 45px;
+            bottom:45px;
+        }
+        
+        #contentFooter
+        {
+            margin-left: 385px;
+            margin-right: 94px;
+        }
+
+        
+        .TopImage
+        {
+            background: transparent url('../Images/logo.png') no-repeat;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            background-position: center;
+        }
+
+        .Text
+        {
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+        
+        .Button
+        {
+            margin-top: 20px;
+       
+        }
+        #pnlLogin_UserName-faux, #pnlLogin_Password-faux{
+            color: #ccc;
+        }
+        input {
+          /*  margin-top: 5px;*/
+        }
+        .placeholder {
+            font-size:12px !important;
+            margin-left: 5px;
+            font-style: italic !important;
+            padding-top: 4px !important;
+        }
+        td {
+            text-align: left;
+            vertical-align: baseline;
+        }
+        span.label {
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        .border {
+            behavior: url(../Scripts/CSS3Converter/PIE.htc);
+            -pie-background: rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.5); 
+            border:1px solid #d1d1d1;
+            border-radius: 8px;
+            border: 1px solid #5c5c5c;
+            border-radius: 8px;
+            background-color: white;
+
+            position: absolute; 
+            left: 50%;
+            top: 50%; 
+            margin-left: -100px; 
+            margin-top: -70px;
+        } 
+
+        #rblLanguage {
+            margin-top: 8px;
+        }
+
+        td.tdError * {
+            color: #e31e24;
+            margin-top: 5px;
+        }
+    </style>
+    
+</head>
+<body style="overflow: hidden; background-color: White;" onload="window.open('', '_self', '');">
+    <form id="form1" runat="server">
+        <img src="../Images/main_background.png" class="leftBackground" />
+        <img src="../Images/line.png" class="rightBackground" />
+
+        <asp:ScriptManager runat="server" />
+        <telerik:RadSkinManager runat="server" ShowChooser="false">
+           <TargetControls>
+               <telerik:TargetControl ControlsToApplySkin="RadButton" Skin="Flash" />
+               <telerik:TargetControl ControlsToApplySkin="RadComboBox" Skin="Flash" />
+               <telerik:TargetControl ControlsToApplySkin="RadNumericTextBox" Skin="Flash" />
+               <telerik:TargetControl ControlsToApplySkin="RadTextBox" Skin="Flash" />
+           </TargetControls>
+       </telerik:RadSkinManager>
+
+        <div id="maket">
+            <div id="Div1">
+                <div class="border" style="z-index: 2;" >
+                        <asp:ContentPlaceHolder id="Content" runat="server">
+                        </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute; bottom: 15px; width: 100%;">
+            <table width="100%">
+                <tr valign="bottom">
+                    <td>
+                        <asp:Image ID="Image1" runat="server" CssClass="imgCustomer" 
+                                   style="margin-left: 15px;" ImageUrl="../Images/main_logo.png" />
+                    </td>
+                    <td align="right" style="padding-right: 15px;">
+                        <asp:Panel ID="pnlImgITT" class="imgITT" meta:resourcekey="imgITTResource1" onclick="window.open('http://www.it-transit.com/');"
+                             runat="server"/>
+                    </td>
+                </tr> 
+            </table>
+        </div>
+
+    </form>
+    <script type="text/javascript">
+        var _WindowStatus = "WindowStatus";
+    </script>
+
+</body>
+</html>

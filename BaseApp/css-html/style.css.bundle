@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle minify="true" runOnBuild="true" output="style.css">
+  <!--The order of the <file> elements determines the order of them when bundled.-->
+  <file>/css-html/commonStyle.css</file>
+  <file>/css-html/Button.Style.css</file>
+  <file>/css-html/ComboBox.Style.css</file>
+  <file>/css-html/FlashStyle.css</file>
+  <file>/css-html/Input.Style.css</file>
+  <file>/css-html/Grid.Style.css</file>
+  <file>/css-html/ListBox.Style.css</file>
+  <file>/css-html/Menu.Style.css</file>
+  <file>/css-html/CheckBox.Style.css</file>
+</bundle>

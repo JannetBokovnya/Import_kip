@@ -1,0 +1,514 @@
+﻿html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+body
+{
+    color: #5e5e5e;
+    font: 12px Tahoma, Arial, Verdana, sans-serif;
+    background-position: left top;
+    background-color: #f9f9f9;
+}
+body *
+{
+    font-family: "Tahoma" !important;
+}
+form, table, tr, td, div
+{
+    padding: 0;
+    margin: 0;
+}
+form {
+    height:100%;
+}
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.AllContent {
+    width:100%;
+    height:100%;
+    margin: 0;
+    position: relative;  
+}
+.TopMenu {
+    margin: 0;
+    height: 28px;
+    width: 100%;
+    z-index:3000;
+    border-bottom: solid 1px #cccccc;
+}
+.BottonContent {
+    width: 100%;
+    position:absolute;
+    left:0;
+    top: 30px;
+    bottom: 0;
+    height: expression(document.body.clientHeight-27+"px");
+    z-index:100;
+}
+.panelMenu {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    background: rgba(238,238,238,0.7);
+    -pie-background: rgba(238,238,238,0.7);
+    padding:2px 5px 5px 5px; 
+    border-right: solid 1px rgb(160,160,160);
+    border-bottom: solid 1px rgb(160,160,160);
+    border-left: solid 1px rgb(160,160,160);
+    -ms-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    visibility: hidden;
+    position: absolute; 
+    right: 50px;
+    z-index:1;
+}
+
+.lblMainPage, .lblOrdinary, .RadComboBox
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: #5c5c5c;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-indent: 0;
+    
+}
+    .lblMainPage
+    {
+        font-weight: bold;
+        margin-left : 5px;
+        white-space: nowrap;
+    }
+
+.lblMainPageOther
+{
+    font-size: 20pt;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: Red;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-indent: 0;
+    cursor: pointer;
+}
+
+div.hr
+{
+    height: 1px;
+    background: #5c5c5c no-repeat scroll center;
+}
+    div.hr hr
+    {
+        display: none;
+    }
+div.line {
+    height: 23px;
+    width: 100%;
+    position: absolute;
+    background: white no-repeat scroll center;
+    z-index: 0;
+    filter: alpha (opacity=80);
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    background-position: left top;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.leftBackground
+{
+    height: 100%;
+    background-position: left top;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.rightBackground
+{
+    height: 100%;
+    background-position: right top;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+.imgCustomer
+{
+    background-position: left bottom;
+    cursor: pointer;
+    cursor: hand;
+    margin-left: 15px;
+    float: left;
+}
+
+.imgITT
+{
+    height: 134px;
+    width: 100px;
+    background: transparent url('../Images/main_ITT.png') no-repeat;
+    background-position: right bottom;
+    cursor: pointer;
+    cursor: pointer;
+    float: right;
+}
+
+                                        /*styleAddBookmarks*/
+#upnlBookmarkMenu, #upnlNotificationMenu, #upnlRedmineMenu {
+    float: left;
+}
+.imgClose
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -600px 0;
+    float: left;
+}
+
+.imgOK
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -575px 0;
+    float: left;
+}
+
+
+
+.RadMenu .rmRootGroup
+{
+    background:  transparent none !Important;
+    border: solid 0 white !Important;
+}
+
+
+div#cmMainMenu.RadMenu_WebBlue > ul > li > a {
+    color: black;
+    padding: 0 0 0 2px;
+}
+    div#cmMainMenu.RadMenu_WebBlue > ul > li > a > span.rmText {
+        float: none !important;
+    }
+
+
+                                            /*styleUserMenu*/
+div#ctl00_filterMenu1_cmMainMenu ul{
+    border: none;
+    background-color: white; 
+}
+
+ 
+span.rmText button {
+  background-image: none !important;
+    background-color: transparent !important; 
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+    
+div.userMenuClass div ul.rmRootGroup {
+    float:right !important;
+}
+
+a.rmLink span.rmText {
+    font-family: Tahoma, Arial, Verdana, sans-serif !important;
+}
+    
+.rmRootGroup {
+    border-color: none !important;
+    border-style: none !important;
+    border: 0 !important;
+}
+
+table.contMenu tr td {
+    padding: 0 5px 0 5px;
+}
+                    /*styleOpenModulesMenu*/
+.lblOMUser, .lblOMExit
+{
+    float: right;
+}
+
+.Passport .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -75px 0;
+}
+
+.PassportActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -51px 0;
+}
+.Graph .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -175px 0;
+}
+.GraphActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -150px 0;
+}
+
+.Diag .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -225px 0;
+}
+
+.DiagActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -200px 0;
+}
+
+.Doc .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -275px 0;
+}
+
+.DocActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -250px 0;
+}
+
+.Help .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -325px 0;
+}
+
+.HelpActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -300px 0;
+}
+/*Логический запрос*/        
+.imgSynch
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -425px 0;
+}
+.imgSynchActive
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -400px 0;
+}
+.imgCNChange
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -375px 0;
+}
+.imgCNChangeActive
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -350px 0;
+}
+
+.Passport, .PassportActive, .Graph, .GraphActive, .Diag, .DiagActive, .Doc, .DocActive, .Help, 
+.HelpActive, .LQ, .LQActive .rmLeftImage, .imgRightRedmine, .langMenu
+.imgRightNotification, .imgRightBookmark, .imgRightHelp, .imgRightUser, .imgRightExit {
+    /*Убирает подсветку при hover*/
+    background:  transparent none !important;
+}
+
+.imgRightNotification .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -475px 0;
+}
+
+.imgRightNotificationNew .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -475px -25px;
+}
+
+.imgRightHelp .rmLeftImage
+{
+
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -500px 0;
+}
+.imgRightRedmine .rmLeftImage
+{
+
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -325px 0;
+}
+
+.imgRightBookmark .rmLeftImage
+{
+    height: 22px;
+    width: 22px;  
+    background: transparent url('../Images/head.png') no-repeat -450px 0;   
+} 
+.imgRightUser .rmLeftImage
+{
+    height: 22px;
+    width: 22px; 
+    background: transparent url('../Images/head.png') no-repeat -525px 0;  
+}
+.imgRightExit .rmLeftImage
+{
+    height: 22px;
+    width: 22px; 
+    background: transparent url('../Images/head.png') no-repeat -550px 0; 
+}
+
+.infoPanelDiv {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    position: absolute;
+    top: 44px;
+    bottom: 160px;
+    width: 23%;
+    background-color: #eeeeee;
+    padding: 3px;
+    padding-bottom: 23px;
+    border-right: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+div.RadListBox .rlbText {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+div.RadListBox .rlbGroup {
+    overflow: auto;
+}
+
+div.RadListBox .rlbList {
+    display: inline-block;
+    -moz-min-width: 100%;
+    -ms-min-width: 100%;
+    -o-min-width: 100%;
+    -webkit-min-width: 100%;
+    min-width: 100%;
+}
+
+* + html div.RadListBox .rlbList {
+    display: inline;
+}
+
+* html div.RadListBox .rlbList {
+    display: inline;
+}
+
+tr.infoTr td div.RadListBox {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/*start css for asp modules*/
+
+
+div.pageContent > div {
+    margin: 4px 10px 0 10px;   
+    text-align: center;
+}
+.lblGroup {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4c934d;
+            
+}
+fieldset.fsSetParam {
+    width: 90%;
+    margin: 0 10px 0 10px;
+    padding: 5px;
+    text-align: left;
+}
+    fieldset.fsSetParam legend {
+        padding: 2px 5px 2px 5px;
+        background-color: #4c934d;
+        color: white;
+        font-weight: bold;
+    }
+        
+table.commonTableClass tr td {
+    padding: 5px;
+}
+        
+    table.setterValues tr td:first-child {
+        font-weight: bold;
+        text-align: right;
+    }
+    table.kmValues tr td:first-child {
+        text-align: left;
+    }
+       
+.gridTable {
+    margin: 5px 5px 0 5px;
+    text-align: left;
+}
+.alignRight {
+    text-align: right;
+}
+/*end css for asp modules*/
+
+/*Swf Video Player*/
+#playerVideoFon {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    background: rgba(255,255,255,0.7);
+    -pie-background: rgba(255,255,255,0.7);
+    position: absolute; 
+    top: 0; 
+    left:0; 
+    z-index:10000; 
+    width: 100%; 
+    height: 100%; 
+    display: none;
+} 
+#playerMenu {
+    background-color: grey;
+    position: absolute; 
+    top: 50%; 
+    left:50%;
+}
+#playerVideoName {
+    background: transparent; 
+    color: white; border:none; 
+    font-weight: bold; 
+    line-height: 20px; 
+    margin-left: 5px;
+    height: 20px; 
+    width: 80%; 
+}

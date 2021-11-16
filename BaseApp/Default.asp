@@ -1,0 +1,1 @@
+<%Response.Redirect("Modules/StartPage/index.aspx")%>

@@ -1,0 +1,8 @@
+data/Admin_mod_querys.cs.i
+data/Auth.cs.i
+data/AuthIas.cs.i
+data/AuthAgp.cs.i
+data/Cryptography.cs.i
+data/IAuth.cs.i
+data/version.txt.i
+data/Connection.cs.i

@@ -1,0 +1,38 @@
+.RadInput_Flash .riDisplay, .RadInput_Flash .riTextBox {
+    display: inline-block;
+    line-height: 23px;
+    height: 22px;
+}
+
+.RadInput_Flash span.riDisplay, .RadInputMgr_Flash span.riDisplay {
+    font: normal 11px Tahoma;
+    color: #5d5c5c;
+    top: 50%;
+    margin-top: -10px;
+}
+.RadInput_Flash input.riTextBox, .RadInputMgr_Flash input.riTextBox {
+    font: normal 11px Tahoma;
+    /*color: #a5a5a5;*/
+    color: #5d5c5c;
+}
+    .RadInput_Flash input.riTextBox.riDisabled, .RadInputMgr_Flash input.riTextBox.riDisabled {
+        color: #dedede;
+    }
+
+html body .RadInput_Flash .riTextBox,html body .RadInputMgr_Flash {
+    border-color:#c0c0c0;
+    background: #fff;
+}
+
+html body .RadInput_Flash .riHover, html body .RadInput_Hover_Flash,
+html body .RadInput_Flash .riFocused, html body .RadInput_Focused_Flash {
+    border-color: #ffd869;
+}
+html body .RadInput_Flash .riDisabled,html body .RadInput_Disabled_Flash {
+    border-color: #dedede;
+}
+
+.RadInput_Flash input:focus{
+    outline: 0;
+}
+

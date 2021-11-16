@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WCFService_ImportKIP" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataMGListKIP_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataMGListKIP" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataMGListKIP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataMGListKIPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataThreadsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataThreadsList" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataThreadsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataThreadsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataKipList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataKipList" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataKipList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataKipListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_ImportFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportFile" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_ImportFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetImpLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImpLog" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetImpLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImpLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetImpAnalyzeFileLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImpAnalyzeFileLog" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetImpAnalyzeFileLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImpAnalyzeFileLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataKipListBD_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataKipListBD" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataKipListBD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataKipListBDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataKipListFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataKipListFile" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetDataKipListFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataKipListFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_ImportKipMatching_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportKipMatching" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_ImportKipMatching_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportKipMatchingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_ImportKipMatchingAuto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportKipMatchingAuto" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_ImportKipMatchingAuto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportKipMatchingAutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_ImportKipMeasurement_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportKipMeasurement" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_ImportKipMeasurement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportKipMeasurementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_KipIsHide_InputMessage">
+    <wsdl:part name="parameters" element="tns:KipIsHide" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_KipIsHide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KipIsHideResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_KipIsHideBD_InputMessage">
+    <wsdl:part name="parameters" element="tns:KipIsHideBD" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_KipIsHideBD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KipIsHideBDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_RemoveBound_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveBound" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_RemoveBound_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveBoundResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetKIPMapping_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetKIPMapping" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetKIPMapping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetKIPMappingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_DeleteKipMeasurement_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteKipMeasurement" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_DeleteKipMeasurement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteKipMeasurementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetSec_Param_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSec_Param" />
+  </wsdl:message>
+  <wsdl:message name="IWCFService_ImportKIP_GetSec_Param_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSec_ParamResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWCFService_ImportKIP">
+    <wsdl:operation name="GetDataMGListKIP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataMGListKIP" message="tns:IWCFService_ImportKIP_GetDataMGListKIP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataMGListKIPResponse" message="tns:IWCFService_ImportKIP_GetDataMGListKIP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataThreadsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataThreadsList" message="tns:IWCFService_ImportKIP_GetDataThreadsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataThreadsListResponse" message="tns:IWCFService_ImportKIP_GetDataThreadsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataKipList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataKipList" message="tns:IWCFService_ImportKIP_GetDataKipList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataKipListResponse" message="tns:IWCFService_ImportKIP_GetDataKipList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/ImportFile" message="tns:IWCFService_ImportKIP_ImportFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/ImportFileResponse" message="tns:IWCFService_ImportKIP_ImportFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImpLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetImpLog" message="tns:IWCFService_ImportKIP_GetImpLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetImpLogResponse" message="tns:IWCFService_ImportKIP_GetImpLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImpAnalyzeFileLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetImpAnalyzeFileLog" message="tns:IWCFService_ImportKIP_GetImpAnalyzeFileLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetImpAnalyzeFileLogResponse" message="tns:IWCFService_ImportKIP_GetImpAnalyzeFileLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataKipListBD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataKipListBD" message="tns:IWCFService_ImportKIP_GetDataKipListBD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataKipListBDResponse" message="tns:IWCFService_ImportKIP_GetDataKipListBD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataKipListFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataKipListFile" message="tns:IWCFService_ImportKIP_GetDataKipListFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetDataKipListFileResponse" message="tns:IWCFService_ImportKIP_GetDataKipListFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportKipMatching">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/ImportKipMatching" message="tns:IWCFService_ImportKIP_ImportKipMatching_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/ImportKipMatchingResponse" message="tns:IWCFService_ImportKIP_ImportKipMatching_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportKipMatchingAuto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/ImportKipMatchingAuto" message="tns:IWCFService_ImportKIP_ImportKipMatchingAuto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/ImportKipMatchingAutoResponse" message="tns:IWCFService_ImportKIP_ImportKipMatchingAuto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportKipMeasurement">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/ImportKipMeasurement" message="tns:IWCFService_ImportKIP_ImportKipMeasurement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/ImportKipMeasurementResponse" message="tns:IWCFService_ImportKIP_ImportKipMeasurement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="KipIsHide">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/KipIsHide" message="tns:IWCFService_ImportKIP_KipIsHide_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/KipIsHideResponse" message="tns:IWCFService_ImportKIP_KipIsHide_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="KipIsHideBD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/KipIsHideBD" message="tns:IWCFService_ImportKIP_KipIsHideBD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/KipIsHideBDResponse" message="tns:IWCFService_ImportKIP_KipIsHideBD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveBound">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/RemoveBound" message="tns:IWCFService_ImportKIP_RemoveBound_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/RemoveBoundResponse" message="tns:IWCFService_ImportKIP_RemoveBound_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKIPMapping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetKIPMapping" message="tns:IWCFService_ImportKIP_GetKIPMapping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetKIPMappingResponse" message="tns:IWCFService_ImportKIP_GetKIPMapping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKipMeasurement">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/DeleteKipMeasurement" message="tns:IWCFService_ImportKIP_DeleteKipMeasurement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/DeleteKipMeasurementResponse" message="tns:IWCFService_ImportKIP_DeleteKipMeasurement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSec_Param">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetSec_Param" message="tns:IWCFService_ImportKIP_GetSec_Param_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFService_ImportKIP/GetSec_ParamResponse" message="tns:IWCFService_ImportKIP_GetSec_Param_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWCFService_ImportKIP" type="tns:IWCFService_ImportKIP">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDataMGListKIP">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/GetDataMGListKIP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataThreadsList">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/GetDataThreadsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataKipList">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/GetDataKipList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportFile">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/ImportFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImpLog">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/GetImpLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImpAnalyzeFileLog">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/GetImpAnalyzeFileLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataKipListBD">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/GetDataKipListBD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataKipListFile">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/GetDataKipListFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportKipMatching">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/ImportKipMatching" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportKipMatchingAuto">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/ImportKipMatchingAuto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportKipMeasurement">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/ImportKipMeasurement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KipIsHide">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/KipIsHide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KipIsHideBD">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/KipIsHideBD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveBound">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/RemoveBound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKIPMapping">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/GetKIPMapping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKipMeasurement">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/DeleteKipMeasurement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSec_Param">
+      <soap:operation soapAction="http://tempuri.org/IWCFService_ImportKIP/GetSec_Param" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WCFService_ImportKIP">
+    <wsdl:port name="BasicHttpBinding_IWCFService_ImportKIP" binding="tns:BasicHttpBinding_IWCFService_ImportKIP">
+      <soap:address location="http://localhost:43554/Modules/Import_kip/WCFService_ImportKIP.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

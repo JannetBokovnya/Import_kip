@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="DataMGList_KIP">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataMGLists" nillable="true" type="tns:ArrayOfDataMGListKIP" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DataMGList_KIP" nillable="true" type="tns:DataMGList_KIP" />
+  <xs:complexType name="StatusAnswer_ImportKIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsValid" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StatusAnswer_ImportKIP" nillable="true" type="tns:StatusAnswer_ImportKIP" />
+  <xs:complexType name="ArrayOfDataMGListKIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataMGListKIP" nillable="true" type="tns:DataMGListKIP" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataMGListKIP" nillable="true" type="tns:ArrayOfDataMGListKIP" />
+  <xs:complexType name="DataMGListKIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KEYMG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAMEMG" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataMGListKIP" nillable="true" type="tns:DataMGListKIP" />
+  <xs:complexType name="DataThreadsList_result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataThreadsLists" nillable="true" type="tns:ArrayOfDataThreadsList" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DataThreadsList_result" nillable="true" type="tns:DataThreadsList_result" />
+  <xs:complexType name="ArrayOfDataThreadsList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataThreadsList" nillable="true" type="tns:DataThreadsList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataThreadsList" nillable="true" type="tns:ArrayOfDataThreadsList" />
+  <xs:complexType name="DataThreadsList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KEYTHREADS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAMEHREADS" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataThreadsList" nillable="true" type="tns:DataThreadsList" />
+  <xs:complexType name="KipDataList_result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="KipDataLists" nillable="true" type="tns:ArrayOfKipDataList" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="KipDataList_result" nillable="true" type="tns:KipDataList_result" />
+  <xs:complexType name="ArrayOfKipDataList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KipDataList" nillable="true" type="tns:KipDataList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKipDataList" nillable="true" type="tns:ArrayOfKipDataList" />
+  <xs:complexType name="KipDataList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dMeasDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nJourKey" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KipDataList" nillable="true" type="tns:KipDataList" />
+  <xs:complexType name="ImpLogKIP">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ImpLogKIP_result" nillable="true" type="tns:ImpLog_resultKIP" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ImpLogKIP" nillable="true" type="tns:ImpLogKIP" />
+  <xs:complexType name="ImpLog_resultKIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ImpLogKIP_result_ret" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ImpLog_resultKIP" nillable="true" type="tns:ImpLog_resultKIP" />
+  <xs:complexType name="ImpLog_resulAnalyzetKipFile">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ImpLogAnalizKIP_result" nillable="true" type="tns:ImpLogAnaliz_resultKIP" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ImpLog_resulAnalyzetKipFile" nillable="true" type="tns:ImpLog_resulAnalyzetKipFile" />
+  <xs:complexType name="ImpLogAnaliz_resultKIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ImpLogAnalizKIP_result_ret" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ImpLogAnaliz_resultKIP" nillable="true" type="tns:ImpLogAnaliz_resultKIP" />
+  <xs:complexType name="KipDataListBD_result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="KipDataListsBD" nillable="true" type="tns:ArrayOfKipDataListBD" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="KipDataListBD_result" nillable="true" type="tns:KipDataListBD_result" />
+  <xs:complexType name="ArrayOfKipDataListBD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KipDataListBD" nillable="true" type="tns:KipDataListBD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKipDataListBD" nillable="true" type="tns:ArrayOfKipDataListBD" />
+  <xs:complexType name="KipDataListBD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NKIP_KEY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NKM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KipDataListBD" nillable="true" type="tns:KipDataListBD" />
+  <xs:complexType name="KipDataListFile_result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="KipDataListsFile" nillable="true" type="tns:ArrayOfKipDataListFile" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="KipDataListFile_result" nillable="true" type="tns:KipDataListFile_result" />
+  <xs:complexType name="ArrayOfKipDataListFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KipDataListFile" nillable="true" type="tns:KipDataListFile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKipDataListFile" nillable="true" type="tns:ArrayOfKipDataListFile" />
+  <xs:complexType name="KipDataListFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ccomment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ckipnum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nkm" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nrawkey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nu_pol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nu_tz" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KipDataListFile" nillable="true" type="tns:KipDataListFile" />
+  <xs:complexType name="KeyBoundResultKIP">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GetKeyBoundList" nillable="true" type="tns:ArrayOfKeyBoundKIP" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="KeyBoundResultKIP" nillable="true" type="tns:KeyBoundResultKIP" />
+  <xs:complexType name="ArrayOfKeyBoundKIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyBoundKIP" nillable="true" type="tns:KeyBoundKIP" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyBoundKIP" nillable="true" type="tns:ArrayOfKeyBoundKIP" />
+  <xs:complexType name="KeyBoundKIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KeyBD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyFile" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KeyBoundKIP" nillable="true" type="tns:KeyBoundKIP" />
+  <xs:complexType name="RemoveBoundKIP">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RemoveBoundKIP_Result" nillable="true" type="tns:RemoveBoundResultKIP" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RemoveBoundKIP" nillable="true" type="tns:RemoveBoundKIP" />
+  <xs:complexType name="RemoveBoundResultKIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RemoveBoundKIP" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RemoveBoundResultKIP" nillable="true" type="tns:RemoveBoundResultKIP" />
+  <xs:complexType name="ParamSecList_result">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StatusAnswer_ImportKIP">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ParamSecLists" nillable="true" type="tns:ArrayOfParamSecList" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ParamSecList_result" nillable="true" type="tns:ParamSecList_result" />
+  <xs:complexType name="ArrayOfParamSecList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParamSecList" nillable="true" type="tns:ParamSecList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfParamSecList" nillable="true" type="tns:ArrayOfParamSecList" />
+  <xs:complexType name="ParamSecList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NKM_BEGIN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NKM_END" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NLENGTH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUMBERKIP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamSecList" nillable="true" type="tns:ParamSecList" />
+</xs:schema>

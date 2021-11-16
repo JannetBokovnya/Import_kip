@@ -1,0 +1,13 @@
+data/EngineDataBase.cs.i
+data/EngineApplication.cs.i
+data/version.txt.i
+data/DataProvider.cs.i
+data/IEngine.cs.i
+data/ParceQuery/ParceQuery.cs.i
+data/ParceQuery/ParceQueryDb.cs.i
+data/CallSignature.cs.i
+data/Marshal/XmlValidator.cs.i
+data/OraWCI.cs.i
+data/Enums/SupportTypes.cs.i
+data/ParceQuery/IParceQuery.cs.i
+data/Marshal/ToXml.cs.i

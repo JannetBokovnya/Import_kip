@@ -1,0 +1,12 @@
+data/version.txt.i
+data/ContextNavigationMenu.ascx.i
+data/App_LocalResources/ContextNavigationMenu.ascx.en-US.resx.i
+data/ContextNavigationMenu.ascx.cs.i
+data/ContextNavigationUP.ascx.cs.i
+data/ContextNavigationPanel.ascx.cs.i
+data/ContextNavigationUP.ascx.i
+data/ContextNavigationPanel.ascx.i
+data/styleContextNavigation.css.i
+data/App_LocalResources/ContextNavigationMenu.ascx.resx.i
+data/App_LocalResources/ContextNavigationPanel.ascx.resx.i
+data/App_LocalResources/ContextNavigationPanel.ascx.en-US.resx.i

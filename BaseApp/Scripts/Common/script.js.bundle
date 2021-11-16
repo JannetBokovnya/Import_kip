@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle minify="true" runOnBuild="true" output="script.js">
+  <!--The order of the <file> elements determines the order of them when bundled.-->
+  <file>/Scripts/Common/QueryStorage.js</file>
+  <file>/Scripts/Common/BookmarksEngine.js</file>
+  <file>/Scripts/Common/ContextNavigationEngine.js</file>
+  <file>/Scripts/Common/eventEngine.js</file>
+  <file>/Scripts/Common/localStorageWorker.js</file>
+  <file>/Scripts/Common/NotificationsEngine.js</file>
+  <file>/Scripts/Common/scriptCommon.js</file>
+  <file>/Scripts/Common/WindowEngine.js</file>
+  <file>/Scripts/Common/VideoPlayerEngine.js</file>
+</bundle>

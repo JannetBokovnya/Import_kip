@@ -1,0 +1,154 @@
+
+#RadMenu_iPhone_Content
+{
+    overflow: hidden;
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+    width: 100%;
+}
+
+.backButton
+{
+    /*background: transparent url('images/BackButton.png') no-repeat 0 0;*/
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 7px;
+    left: 5px;
+    height: 30px;
+    padding-left: 0px;
+    z-index: 2;
+    
+}
+    .backButton div {
+        behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+        list-style-position:inside;
+        border-right:1px solid #dcdcdc;
+        border-bottom:1px solid #dcdcdc;
+        -pie-background: rgba(238,238,238,0.7) url(../../UserControls/Startpage/IPhoneMenu/images/SubMenuIndicator.gif) no-repeat 0 -55px;
+        background: rgba(238,238,238,0.7) url(../../../UserControls/Startpage/IPhoneMenu/images/SubMenuIndicator.gif) no-repeat 0 -55px;
+        border-radius: 0px 5px 5px 0px;
+    }
+        .backButton div:hover {
+            behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+            -pie-background: rgba(160,160,160,0.7) url(../../UserControls/Startpage/IPhoneMenu/images/SubMenuIndicator.gif) no-repeat 0 -55px;
+            background: rgba(160,160,160,0.7) url(../../../UserControls/Startpage/IPhoneMenu/images/SubMenuIndicator.gif) no-repeat 0 -55px ;
+        }
+        .backButton div span
+        {
+            color: #5c5c5c;
+            display: block;
+            font: bold 12px/30px "Tahoma","Segoe UI", "Myriad Pro", Arial, sans-serif; 
+            padding-left: 30px;
+        }
+
+.orientationLabel,
+.verticalButton,
+.horizontalButton
+{
+	float: left;
+	width: 60px;
+	height: 29px;
+	line-height: 29px;
+}
+
+.verticalButton
+{
+	width: 107px;
+	margin-left: 60px;
+	background: url('images/vertical.png');
+}
+
+.horizontalButton
+{
+	width: 107px;
+	margin-left: 60px;
+	background: url('images/horizontal.png');
+}
+
+div.RadMenu_iPhone ul.rmRootGroup li.rmItem {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    list-style-position:inside;
+    border-right:1px solid #dcdcdc !important;
+    border-bottom:1px solid #dcdcdc !important;
+    -pie-background: rgba(238,238,238,0.7);
+    background: rgba(238,238,238,0.7);
+        
+}
+div.RadMenu_iPhone ul.rmRootGroup li.parent {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    -pie-background: rgba(238,238,238,0.7) url(../../UserControls/Startpage/IPhoneMenu/images/SubMenuIndicator.gif) no-repeat 100% -5%;
+    background: rgba(238,238,238,0.7) url(../../../UserControls/Startpage/IPhoneMenu/images/SubMenuIndicator.gif) no-repeat 100% -5%;
+}
+div.RadMenu_iPhone ul.rmRootGroup li.rmItem:hover {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    -pie-background: rgba(160,160,160,0.7);
+    background: rgba(160,160,160,0.7);
+}
+div.RadMenu_iPhone ul.rmRootGroup li.parent:hover {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    -pie-background: rgba(160,160,160,0.7) url(../../UserControls/Startpage/IPhoneMenu/images/SubMenuIndicator.gif) no-repeat 100% -5%;
+    background: rgba(160,160,160,0.7) url(../../../UserControls/Startpage/IPhoneMenu/images/SubMenuIndicator.gif) no-repeat 100% -5%;
+}
+    
+/* Стрелки перехода выносит вправо. Выравнивание */
+div.RadMenu_iPhone .rmRootGroup, 
+div.RadMenu_iPhone .rmGroup, 
+div.RadMenu_iPhone .rmSlide, 
+div.RadMenu_iPhone .rmItem
+{
+    width: 100% !important; 
+}
+/* показывает 3 пункт меню */
+div.RadMenu_iPhone .rmSlide
+{
+    top: 0;
+    overflow: visible; 
+    display: inline-block;
+}
+
+div.RadMenu_iPhone a.rmLink, 
+div.RadMenu_iPhone div.rmSlide a.rmLink
+{
+    cursor: pointer !important;
+    text-decoration: none;
+    color: #5c5c5c;
+    font: bold 11px/18px "Tahoma", "Segoe UI", sans-serif;
+    text-align: center;
+    vertical-align: text-bottom;
+    width: 100% !important;
+    height: 10px;
+    background: transparent url('images/passport.png') no-repeat;
+    background-position: center top; 
+    padding-top: 37px;
+}
+
+div.RadMenu_iPhone .rmGroup .rmText
+{
+    text-align: center;
+    vertical-align: text-bottom;
+    padding-left: 0px !important;
+    margin: 0px !important;
+
+}
+
+.RadMenu_iPhone .rmVertical .rmText {
+    float: left !important;
+    word-wrap: break-word;
+}
+
+.RadMenu_iPhone {
+    float: none !important;
+    margin-right: 5px;
+}
+
+.RadMenu_iPhone .rmVertical a.rmLink {
+    padding-left: 0px !important;
+}
+    .RadMenu_iPhone .rmVertical a.rmLink span.rmText {
+        width: 100% !important;
+        padding-right: 0px !important;
+    }
+

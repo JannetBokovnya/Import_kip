@@ -1,0 +1,1370 @@
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+body
+{
+    color: #5e5e5e;
+    font: 12px Tahoma, Arial, Verdana, sans-serif;
+    background-position: left top;
+    background-color: #f9f9f9;
+}
+body *
+{
+    font-family: "Tahoma" !important;
+}
+form, table, tr, td, div
+{
+    padding: 0;
+    margin: 0;
+}
+form {
+    height:100%;
+}
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.AllContent {
+    width:100%;
+    height:100%;
+    margin: 0;
+    position: relative;  
+}
+.TopMenu {
+    margin: 0;
+    height: 28px;
+    width: 100%;
+    z-index:3000;
+    border-bottom: solid 1px #cccccc;
+}
+.BottonContent {
+    width: 100%;
+    position:absolute;
+    left:0;
+    top: 30px;
+    bottom: 0;
+    height: expression(document.body.clientHeight-27+"px");
+    z-index:100;
+}
+.panelMenu {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    background: rgba(238,238,238,0.7);
+    -pie-background: rgba(238,238,238,0.7);
+    padding:2px 5px 5px 5px; 
+    border-right: solid 1px rgb(160,160,160);
+    border-bottom: solid 1px rgb(160,160,160);
+    border-left: solid 1px rgb(160,160,160);
+    -ms-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    visibility: hidden;
+    position: absolute; 
+    right: 50px;
+    z-index:1;
+}
+
+.lblMainPage, .lblOrdinary, .RadComboBox
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: #5c5c5c;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-indent: 0;
+    
+}
+    .lblMainPage
+    {
+        font-weight: bold;
+        margin-left : 5px;
+        white-space: nowrap;
+    }
+
+.lblMainPageOther
+{
+    font-size: 20pt;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: Red;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-indent: 0;
+    cursor: pointer;
+}
+
+div.hr
+{
+    height: 1px;
+    background: #5c5c5c no-repeat scroll center;
+}
+    div.hr hr
+    {
+        display: none;
+    }
+div.line {
+    height: 23px;
+    width: 100%;
+    position: absolute;
+    background: white no-repeat scroll center;
+    z-index: 0;
+    filter: alpha (opacity=80);
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    background-position: left top;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.leftBackground
+{
+    height: 100%;
+    background-position: left top;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.rightBackground
+{
+    height: 100%;
+    background-position: right top;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+.imgCustomer
+{
+    background-position: left bottom;
+    cursor: pointer;
+    cursor: hand;
+    margin-left: 15px;
+    float: left;
+}
+
+.imgITT
+{
+    height: 134px;
+    width: 100px;
+    background: transparent url('../Images/main_ITT.png') no-repeat;
+    background-position: right bottom;
+    cursor: pointer;
+    cursor: pointer;
+    float: right;
+}
+
+                                        /*styleAddBookmarks*/
+#upnlBookmarkMenu, #upnlNotificationMenu, #upnlRedmineMenu {
+    float: left;
+}
+.imgClose
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -600px 0;
+    float: left;
+}
+
+.imgOK
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -575px 0;
+    float: left;
+}
+
+
+
+.RadMenu .rmRootGroup
+{
+    background:  transparent none !Important;
+    border: solid 0 white !Important;
+}
+
+
+div#cmMainMenu.RadMenu_WebBlue > ul > li > a {
+    color: black;
+    padding: 0 0 0 2px;
+}
+    div#cmMainMenu.RadMenu_WebBlue > ul > li > a > span.rmText {
+        float: none !important;
+    }
+
+
+                                            /*styleUserMenu*/
+div#ctl00_filterMenu1_cmMainMenu ul{
+    border: none;
+    background-color: white; 
+}
+
+ 
+span.rmText button {
+  background-image: none !important;
+    background-color: transparent !important; 
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+    
+div.userMenuClass div ul.rmRootGroup {
+    float:right !important;
+}
+
+a.rmLink span.rmText {
+    font-family: Tahoma, Arial, Verdana, sans-serif !important;
+}
+    
+.rmRootGroup {
+    border-color: none !important;
+    border-style: none !important;
+    border: 0 !important;
+}
+
+table.contMenu tr td {
+    padding: 0 5px 0 5px;
+}
+                    /*styleOpenModulesMenu*/
+.lblOMUser, .lblOMExit
+{
+    float: right;
+}
+
+.Passport .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -75px 0;
+}
+
+.PassportActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -51px 0;
+}
+.Graph .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -175px 0;
+}
+.GraphActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -150px 0;
+}
+
+.Diag .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -225px 0;
+}
+
+.DiagActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -200px 0;
+}
+
+.Doc .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -275px 0;
+}
+
+.DocActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -250px 0;
+}
+
+.Help .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -325px 0;
+}
+
+.HelpActive .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -300px 0;
+}
+/*Логический запрос*/        
+.imgSynch
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -425px 0;
+}
+.imgSynchActive
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -400px 0;
+}
+.imgCNChange
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -375px 0;
+}
+.imgCNChangeActive
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -350px 0;
+}
+
+.Passport, .PassportActive, .Graph, .GraphActive, .Diag, .DiagActive, .Doc, .DocActive, .Help, 
+.HelpActive, .LQ, .LQActive .rmLeftImage, .imgRightRedmine, .langMenu
+.imgRightNotification, .imgRightBookmark, .imgRightHelp, .imgRightUser, .imgRightExit {
+    /*Убирает подсветку при hover*/
+    background:  transparent none !important;
+}
+
+.imgRightNotification .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -475px 0;
+}
+
+.imgRightNotificationNew .rmLeftImage
+{
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -475px -25px;
+}
+
+.imgRightHelp .rmLeftImage
+{
+
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -500px 0;
+}
+.imgRightRedmine .rmLeftImage
+{
+
+    height: 22px;
+    width: 22px;
+    background: transparent url('../Images/head.png') no-repeat -325px 0;
+}
+
+.imgRightBookmark .rmLeftImage
+{
+    height: 22px;
+    width: 22px;  
+    background: transparent url('../Images/head.png') no-repeat -450px 0;   
+} 
+.imgRightUser .rmLeftImage
+{
+    height: 22px;
+    width: 22px; 
+    background: transparent url('../Images/head.png') no-repeat -525px 0;  
+}
+.imgRightExit .rmLeftImage
+{
+    height: 22px;
+    width: 22px; 
+    background: transparent url('../Images/head.png') no-repeat -550px 0; 
+}
+
+.infoPanelDiv {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    position: absolute;
+    top: 44px;
+    bottom: 160px;
+    width: 23%;
+    background-color: #eeeeee;
+    padding: 3px;
+    padding-bottom: 23px;
+    border-right: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+div.RadListBox .rlbText {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+div.RadListBox .rlbGroup {
+    overflow: auto;
+}
+
+div.RadListBox .rlbList {
+    display: inline-block;
+    -moz-min-width: 100%;
+    -ms-min-width: 100%;
+    -o-min-width: 100%;
+    -webkit-min-width: 100%;
+    min-width: 100%;
+}
+
+* + html div.RadListBox .rlbList {
+    display: inline;
+}
+
+* html div.RadListBox .rlbList {
+    display: inline;
+}
+
+tr.infoTr td div.RadListBox {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/*start css for asp modules*/
+
+
+div.pageContent > div {
+    margin: 4px 10px 0 10px;   
+    text-align: center;
+}
+.lblGroup {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4c934d;
+            
+}
+fieldset.fsSetParam {
+    width: 90%;
+    margin: 0 10px 0 10px;
+    padding: 5px;
+    text-align: left;
+}
+    fieldset.fsSetParam legend {
+        padding: 2px 5px 2px 5px;
+        background-color: #4c934d;
+        color: white;
+        font-weight: bold;
+    }
+        
+table.commonTableClass tr td {
+    padding: 5px;
+}
+        
+    table.setterValues tr td:first-child {
+        font-weight: bold;
+        text-align: right;
+    }
+    table.kmValues tr td:first-child {
+        text-align: left;
+    }
+       
+.gridTable {
+    margin: 5px 5px 0 5px;
+    text-align: left;
+}
+.alignRight {
+    text-align: right;
+}
+/*end css for asp modules*/
+
+/*Swf Video Player*/
+#playerVideoFon {
+    behavior: url(../../Scripts/CSS3Converter/PIE.htc);
+    background: rgba(255,255,255,0.7);
+    -pie-background: rgba(255,255,255,0.7);
+    position: absolute; 
+    top: 0; 
+    left:0; 
+    z-index:10000; 
+    width: 100%; 
+    height: 100%; 
+    display: none;
+} 
+#playerMenu {
+    background-color: grey;
+    position: absolute; 
+    top: 50%; 
+    left:50%;
+}
+#playerVideoName {
+    background: transparent; 
+    color: white; border:none; 
+    font-weight: bold; 
+    line-height: 20px; 
+    margin-left: 5px;
+    height: 20px; 
+    width: 80%; 
+}
+
+.RadButton_Flash, .RadButton_Flash .rbDecorated {
+    font-family:Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    color: #5c5c5c;
+}
+
+.RadButton_Flash.rbDisabled, .RadButton_Flash.rbDisabled .rbDecorated {
+    font-family:Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    color: #d9d9d9; 
+    opacity: 1;
+}
+
+.RadButton_Flash.rbSkinnedButton,
+.RadButton_Flash.rbVerticalButton {
+    behavior: url(../../../Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0;
+    background-color: #fafafa;
+}
+    .RadButton_Flash.rbSkinnedButton:hover,
+    .RadButton_Flash.rbVerticalButton:hover {
+        border: 1px solid #ffd869 !important ;
+        background-color: #fff6dd !important;
+    }
+    .RadButton_Flash.rbSkinnedButton:focus,
+    .RadButton_Flash.rbVerticalButton:focus {
+        border: 1px solid #ffd869;
+        outline:0;
+    }
+
+    .RadButton_Flash.rbSkinnedButton:active,
+    .RadButton_Flash.rbVerticalButton:active {
+        border: 1px solid #ffd869;
+    }
+
+    .RadButton_Flash.rbSkinnedButton.rbDisabled,
+    .RadButton_Flash.rbVerticalButton.rbDisabled {
+        border: 1px solid #eaeaea !important;
+        background-color: #f7f7f7 !important;
+        color: #d9d9d9;
+    }
+
+        .RadButton_Flash.rbSkinnedButton.rbDisabled:hover,
+        .RadButton_Flash.rbVerticalButton.rbDisabled:hover {
+            border: 1px solid #eaeaea;
+            background-color: #f7f7f7 !important;
+            color: #d9d9d9;
+
+        } 
+
+
+
+.RadButton_Flash.rbVerticalButton {
+    padding: 0 !important; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.RadComboBoxDropDown_Flash .rcbHeader,.RadComboBoxDropDown_Flash .rcbFooter{color:#00156e;background-color:#c3d8f1}
+.RadComboBoxDropDown_Flash .rcbHeader{border-bottom-color:#868686}
+.RadComboBoxDropDown_Flash .rcbFooter{border-top-color:#868686}
+.RadComboBoxDropDown_Flash .rcbCheckAllItems,.RadComboBoxDropDown_Flash .rcbCheckAllItemsHovered{color:#00156e;background-color:#c3d8f1}
+.RadComboBoxDropDown_Flash .rcbMoreResults{border-color:#688caf;color:#00156e;background-color:#c3d8f1}
+.RadComboBoxDropDown_Flash .rcbMoreResults a{border-top-color:#00156e}
+
+.RadComboBoxDropDown_Flash{border-color:#868686;background:white;}
+
+/* �������� ������ */
+.RadComboBox_Flash,
+.RadComboBox_Flash .rcbInput,
+.RadComboBoxDropDown_Flash {
+    color:#5c5c5c;
+    font-size:11px;
+    font-family: Tahoma;
+}
+    .RadComboBox_Flash .rcbEmptyMessage {
+        color: #a5a5a5;
+        font-style: italic;
+    }
+    .RadComboBox_Flash .rcbDisabled .rcbInput {
+        color: #c0c0c0;
+    }
+
+/* �������� ������*/
+div.RadComboBox_Flash .rcbInputCell {
+    border: 1px solid #c0c0c0 !important;
+	background-image: none;
+	background-color: #fff;
+    line-height: normal !important;
+}
+    div.RadComboBox_Flash .rcbHovered .rcbInputCell,
+    div.RadComboBox_Flash .rcbFocused .rcbInputCell {
+        border: 1px solid #ffd869 !important;
+    }
+    div.RadComboBox_Flash .rcbDisabled .rcbInputCell {
+        border: 1px solid #dedede !important;
+    }
+/* �������� ������� ������*/
+div.RadComboBox_Flash .rcbArrowCell {
+    border: 1px solid #c0c0c0 !important;
+    background-image: url('down.png');
+	background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    div.RadComboBox_Flash .rcbHovered .rcbArrowCell,
+    div.RadComboBox_Flash .rcbFocused .rcbArrowCell {
+	    border: 1px solid #ffd869 !important;
+	    background-color: #fff6dd;
+    }
+    div.RadComboBox_Flash .rcbDisabled .rcbArrowCell {
+	    border: 1px solid #dedede !important;
+	    background-color: #f7f7f7;
+    }
+
+.RadComboBox .rcbReadOnly td.rcbArrowCell a,
+div.RadComboBox_Flash .rcbArrowCell a {
+    width: 17px !important;
+}
+
+/* ������� ������ ����������� ������*/
+div.RadComboBoxDropDown_Flash ul.rcbList li {
+    line-height: 23px;
+}
+    div.RadComboBoxDropDown_Flash ul.rcbList li.rcbHovered {
+        background: #f2f2f2;
+    }
+
+/* ������� ������������ ����� �� ������� input*/
+.RadComboBox table td.rcbInputCell, .RadComboBox .rcbInputCell .rcbInput {
+    box-sizing: border-box;
+}
+
+
+
+/*Button Start*/
+input[type=submit].FlashButton {
+    behavior: url(../Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0;
+    background-color: #fafafa;
+    font: 11px Tahoma;
+    color: #5c5c5c;
+    font-weight: bold;
+}
+    input[type=submit].FlashButton:hover {
+        border: 1px solid #ffd869;
+        background-color: #fff6dd !important;
+    }
+
+    input[type=submit].FlashButton:focus {
+        border: 1px solid #ffd869;
+        outline:0;
+    }
+
+    input[type=submit].FlashButton:not(.aspNetDisabled):active {
+        border: 1px solid #ffd869;
+    }
+
+    input[type=submit].FlashButton.aspNetDisabled {
+        background-color: #f7f7f7 !important;
+        border: 1px solid #eaeaea;
+        color: #d9d9d9;
+    }
+        input[type=submit].FlashButton.aspNetDisabled:hover {
+            border: 1px solid #eaeaea;
+            background-color: #f7f7f7 !important;
+            color: #d9d9d9;
+        }
+/* Button End*/
+.RadInput_Flash .riDisplay, .RadInput_Flash .riTextBox {
+    display: inline-block;
+    line-height: 23px;
+    height: 22px;
+}
+
+.RadInput_Flash span.riDisplay, .RadInputMgr_Flash span.riDisplay {
+    font: normal 11px Tahoma;
+    color: #5d5c5c;
+    top: 50%;
+    margin-top: -10px;
+}
+.RadInput_Flash input.riTextBox, .RadInputMgr_Flash input.riTextBox {
+    font: normal 11px Tahoma;
+    /*color: #a5a5a5;*/
+    color: #5d5c5c;
+}
+    .RadInput_Flash input.riTextBox.riDisabled, .RadInputMgr_Flash input.riTextBox.riDisabled {
+        color: #dedede;
+    }
+
+html body .RadInput_Flash .riTextBox,html body .RadInputMgr_Flash {
+    border-color:#c0c0c0;
+    background: #fff;
+}
+
+html body .RadInput_Flash .riHover, html body .RadInput_Hover_Flash,
+html body .RadInput_Flash .riFocused, html body .RadInput_Focused_Flash {
+    border-color: #ffd869;
+}
+html body .RadInput_Flash .riDisabled,html body .RadInput_Disabled_Flash {
+    border-color: #dedede;
+}
+
+.RadInput_Flash input:focus{
+    outline: 0;
+}
+
+
+.RadGrid_Flash {
+    border:1px solid #c0c0c0;
+    background-color:#f7f7f7;
+    color:#5c5c5c;
+    font:normal 11px "Tahoma";
+    line-height: 16px;
+}
+
+
+.RadGrid_Flash .rgMasterTable,.RadGrid_Flash .rgDetailTable,.RadGrid_Flash .rgGroupPanel table,
+.RadGrid_Flash .rgCommandRow table,.RadGrid_Flash .rgEditForm table,.RadGrid_Flash .rgPager table {
+    font:normal 11px "Tahoma";
+    line-height: 16px;
+}
+
+/* �� ��� ������ �� �����. �������� ������� ����, ����� ����� ������� ��� �� �������� � ���������*/
+.RadGrid_Flash .rgInput {
+    background-color:white;
+    border:1px solid Red;
+    color:#5c5c5c;
+}
+.rgHeaderWrapper .rgHeaderDiv {
+    border-color:Red
+}
+
+.GridToolTip_Flash {
+    font:normal 11px "Tahoma";
+    line-height: 16px;
+}
+
+.RadGrid_Flash .rgHeader:first-child,.RadGrid_Flash th.rgResizeCol:first-child,.RadGrid_Flash .rgFilterRow>td:first-child,
+.RadGrid_Flash .rgRow>td:first-child,.RadGrid_Flash .rgAltRow>td:first-child{border-left-width:0;padding-left:8px}
+
+.RadGrid_Flash .rgSave,.RadGrid_Flash .rgAdd,.RadGrid_Flash .rgRefresh,.RadGrid_Flash .rgEdit,.RadGrid_Flash .rgDel,.RadGrid_Flash .rgFilter,
+.RadGrid_Flash .rgExpand,
+.RadGrid_Flash .rgCollapse,.RadGrid_Flash .rgSortAsc,.RadGrid_Flash .rgSortDesc,.RadGrid_Flash .rgUpdate,.RadGrid_Flash .rgCancel,
+.RadGrid_Flash .rgUngroup,.RadGrid_Flash .rgExpXLS,.RadGrid_Flash .rgExpDOC,.RadGrid_Flash .rgExpPDF,.RadGrid_Flash .rgExpCSV {
+    background-image:url('Grid/sprite.gif')
+}
+
+.rgTwoLines .rgHeaderDiv{background-position:0 -7550px}
+
+
+.RadGrid_Flash .rgHeader,.RadGrid_Flash th.rgResizeCol,.RadGrid_Flash .rgHeaderWrapper {
+    border:solid #c0c0c0;border-width:0 0 1px 1px;background:0 -2300px repeat-x #c3d8f1 url('Grid/sprite.gif')
+}
+
+.RadGrid_Flash .rgMultiHeaderRow th.rgHeader,.RadGrid_Flash .rgMultiHeaderRow th.rgResizeCol{border:solid #c0c0c0;border-width:0 0 1px 1px}
+
+.RadGrid_Flash th.rgSorted{border-bottom-color:#ff9b35;background-color:#ffca5e;background-position:0 -2600px}
+
+.RadGrid_Flash .rgHeader{color:#c0c0c0}
+                                                                                                              
+.RadGrid_Flash .rgHeader a{color:#c0c0c0}
+
+.RadGrid_Flash th.rgSorted,.RadGrid_Flash th.rgSorted a{color:#000}
+
+.RadGrid_Flash .rgRow td,.RadGrid_Flash .rgAltRow td,.RadGrid_Flash .rgEditRow td,.RadGrid_Flash .rgFooter td{border-style:solid;border-width:0 0 1px 1px}
+
+.RadGrid_Flash .rgRow td,.RadGrid_Flash .rgAltRow td{border-color:#e6e6e6}
+
+.RadGrid_Flash .rgRow .rgSorted,.RadGrid_Flash .rgAltRow .rgSorted{background-color:#c0c0c0}
+
+/*.RadGrid_Flash .rgSelectedRow .rgSorted,.RadGrid_Flash .rgActiveRow .rgSorted,.RadGrid_Flash .rgHoveredRow .rgSorted,.RadGrid_Flash .rgEditRow .rgSorted{background-color:transparent}*/
+
+.RadGrid_Flash .rgRow a,.RadGrid_Flash .rgAltRow a,.RadGrid_Flash .rgEditRow a,.RadGrid_Flash .rgFooter a,.RadGrid_Flash .rgEditForm a {
+    color: #0096db;
+}
+
+.RadGrid_Flash .rgMasterTable .rgSelectedCell,.RadGrid_Flash .rgSelectedRow{background:#ffcb60 0 -3900px repeat-x url('Grid/sprite.gif')}
+
+*+html .RadGrid_Flash .rgSelectedRow .rgSorted{background-color:#ffcb60}
+
+html .RadGrid_Flash .rgSelectedRow .rgSorted{background-color:#ffcb60}
+
+.RadGrid_Flash .rgMasterTable .rgActiveCell,.RadGrid_Flash .rgActiveRow,.RadGrid_Flash .rgHoveredRow{background:#ecf4ff}
+
+*+html .RadGrid_Flash .rgActiveRow .rgSorted,*+html .RadGrid_Flash .rgHoveredRow .rgSorted{background-color:#ecf4ff}
+
+.RadGrid_Flash .rgEditRow{background:#ffe5ad}
+
+*+html .RadGrid_Flash .rgEditRow .rgSorted,* html .RadGrid_Flash .rgEditRow .rgSorted{background-color:#ffe5ad}
+
+.RadGrid_Flash .rgSelectedRow td,.RadGrid_Flash .rgActiveRow td,.RadGrid_Flash .rgHoveredRow td,.RadGrid_Flash .rgEditRow td{border-left-width:0;padding-left:8px}
+
+/* .RadGrid_Flash .rgSelectedRow td{border-bottom-color:#ff9b35} */
+
+.RadGrid_Flash .rgActiveRow td,.RadGrid_Flash .rgHoveredRow td,.RadGrid_Flash .rgEditRow td{border-bottom-color:#d0d7e5}
+
+.RadGrid_Flash .rgDrag{background-image:url('Grid/rgDrag.gif')}
+
+.RadGrid_Flash .rgFooterDiv,.RadGrid_Flash .rgFooter,.RadGrid_Flash .rgFooterWrapper{background:#9ab5db 0 -6500px repeat-x url('Grid/sprite.gif')}
+
+.RadGrid_Flash .rgFooter td,.RadGrid_Flash .rgFooterWrapper{border-width:1px 0;border-color:#c0c0c0}
+
+.RadGrid_Flash .rgFooterWrapper .rgFooter td{border-bottom:0}
+
+.RadGrid_Flash .rgFooterWrapper{border-bottom:1px solid #fff}
+
+.RadGrid_Flash .rgPager .rgStatus{border:1px solid;border-width:1px 1px 0 0;border-color:#c0c0c0}
+
+.RadGrid_Flash .rgStatus div{background-image:url('Common/loading_small.gif')}
+
+
+
+.RadGrid_Flash .rgPager{background:Red 0 -7000px repeat-x url('Grid/sprite.gif');color:#c0c0c0}
+
+
+ .RadGrid_Flash .rgInfoPart{ color: #c0c0c0;}
+.RadGrid_Flash .rgPageFirst{
+    background:#fafafa url('Grid/first-16.png') center !important;
+    behavior: url(~/Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0 !important;
+}                          
+    .RadGrid_Flash .rgPageFirst:hover {
+         background:#fff6dd url('Grid/first-16.png') center !important;
+         border: 1px solid #ffd869 !important ;
+    }
+.RadGrid_Flash .rgPagePrev{
+    background:#fafafa url('Grid/previous-16.png') center !important;
+    behavior: url(~/Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0 !important;
+}
+    .RadGrid_Flash .rgPagePrev:hover {
+         background:#fff6dd url('Grid/previous-16.png') center !important;
+         border: 1px solid #ffd869 !important ;
+    }
+.RadGrid_Flash .rgPageNext {
+    background:#fafafa repeat-x url('Grid/next-16.png') center !important;
+    behavior: url(~/Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0 !important;
+}
+    .RadGrid_Flash .rgPageNext:hover {
+         background:#fff6dd url('Grid/next-16.png') center !important;
+         border: 1px solid #ffd869 !important ;
+    }
+.RadGrid_Flash .rgPageLast {
+    background:#fafafa repeat-x url('Grid/last-16.png') center !important;
+    behavior: url(~/Scripts/CSS3Converter/PIE.htc);
+    border-radius: 3px;
+    border: 1px solid #c0c0c0 !important;
+}
+    .RadGrid_Flash .rgPageLast:hover {
+         background:#fff6dd url('Grid/last-16.png') center !important;
+         border: 1px solid #ffd869 !important ;
+    }
+
+.RadGrid_Flash .rgPager .rgPagerButton{border-color:#c0c0c0;background:#e8f1fc repeat-x 0 -1550px url('Grid/sprite.gif');font:normal 11px "Tahoma";color:#5f5f5f}
+
+
+
+.RadGrid_Flash .rgNumPart a{color:#5c5c5c}
+.RadGrid_Flash .rgNumPart a:hover,.RadGrid_Flash .rgNumPart a.rgCurrentPage,
+.RadGrid_Flash .rgNumPart a:hover span,.RadGrid_Flash .rgNumPart a.rgCurrentPage span {
+    /*border: 1px solid #ffd869 !important ;*/
+    background-color: #fff6dd !important;
+}
+
+
+.RadGrid_Flash .rgHeader .rgSortAsc{background-position:3px -147px;height:10px}
+.RadGrid_Flash .rgHeader .rgSortDesc{background-position:3px -96px;height:10px}
+.GridReorderTop_Flash{height:12px;background:0 0 no-repeat url('Grid/sprite.gif')}
+.GridReorderBottom_Flash{height:12px;background:0 0 no-repeat url('Grid/sprite.gif');background-position:0 -50px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.RadGrid_Flash .rgFilterRow{background:#d6e5f3}
+.RadGrid_Flash .rgFilterRow td{border:solid #9eb6ce;border-width:0 0 1px 1px}
+.RadGrid_Flash .rgFilter{background-position:0 -300px}
+.RadGrid_Flash .rgFilter:hover{background-position:0 -350px}
+.RadGrid_Flash .rgFilterActive{background-position:0 -400px}
+.RadGrid_Flash .rgFilterActive:hover{background-position:0 -400px}
+.RadGrid_Flash .rgFiltered{background-position:0 -325px}
+.RadGrid_Flash .rgFiltered:hover{background-position:0 -375px}
+.RadGrid_Flash .rgFiltered.rgFilterActive{background-position:0 -425px}
+.RadGrid_Flash .rgFilterBox{border-color:#abc1de;font:normal 11px "Tahoma";color:#5f5f5f}
+.RadMenu_Flash .rgHCMClear,.RadMenu_Flash .rgHCMFilter{border-color:#a7bedb #7d98bd #a3bad8;background:#e8f1fc center -23px repeat-x url('FormDecorator/ButtonSprites.gif');color:#00156e;font-family:"Tahoma"}
+.RadMenu_Flash .rgHCMClear:hover,.RadMenu_Flash .rgHCMFilter:hover{border-color:#d8ca95 #b9a073 #c6ba9d;background-position:center -67px;background-color:#ffe18a;color:#000}
+.RadMenu_Flash_Context .rgFilterApply,.RadMenu_Flash_Context .rgFilterCancel{background-image:url('Common/radGradientButtonSprite.png');_background-image:none;border-color:#a7bedb;color:#00156e;background-color:#e8f1fc;background-image:linear-gradient(#e8f1fc 0,#e9f1fc 50%,#d2e1f4 50%,#e8f1fc 100%);font-family:"Tahoma";font-size:11px;color:#5f5f5f;border-color:#ccdbed #abc1de #abc1de #ccdbed}
+
+div.RadMenu_Flash_Context .rlbGroup{border-color:#c5c5c5}
+.GridContextMenu_Flash .rmLeftImage{background-image:url('Common/contextMenu.gif')}
+.GridContextMenu_Flash .rgHCMSortAsc .rmLeftImage{background-position:0 0}
+.GridContextMenu_Flash .rgHCMSortDesc .rmLeftImage{background-position:0 -40px}
+.GridContextMenu_Flash .rgHCMUnsort .rmLeftImage{background-position:0 -80px}
+.GridContextMenu_Flash .rgHCMGroup .rmLeftImage{background-position:0 -120px}
+.GridContextMenu_Flash .rgHCMUngroup .rmLeftImage{background-position:0 -160px}
+.GridContextMenu_Flash .rgHCMCols .rmLeftImage{background-position:0 -200px}
+.GridContextMenu_Flash .rgHCMFilter .rmLeftImage{background-position:0 -240px}
+.GridContextMenu_Flash .rgHCMUnfilter .rmLeftImage{background-position:0 -280px}
+.RadGrid_Flash .rgGroupPanel{border:0;border-bottom:1px solid #688caf;background:#ecf3fc}
+.RadGrid_Flash .rgGroupPanel td{border:0;padding:3px 4px;vertical-align:middle}
+.RadGrid_Flash .rgGroupPanel td td{padding:0}
+.RadGrid_Flash .rgGroupPanel .rgSortAsc{background-position:4px -144px}
+.RadGrid_Flash .rgGroupPanel .rgSortDesc{background-position:4px -94px}
+.RadGrid_Flash .rgUngroup{background-position:0 -7500px}
+.RadGrid_Flash .rgGroupItem{border:1px solid #c0c0c0;background:#e6ebf5 0 -1900px repeat-x url('Grid/sprite.gif');color:#c5c5c5}
+.RadGrid_Flash .rgGroupHeader{background:#d7e6f7;font-size:1.1em;line-height:21px;color:#5c5c5c}
+.RadGrid_Flash .rgGroupHeader td{border-top:1px solid #fcfcfd;border-bottom:1px solid #6f92b3;padding-left:8px}
+.RadGrid_Flash td.rgGroupCol,.RadGrid_Flash td.rgExpandCol{background:#d7e6f7 none;border-color:#d7e6f7}
+.RadGrid_Flash .rgGroupHeader .rgExpand{background-position:5px -495px}
+.RadGrid_Flash .rgGroupHeader .rgCollapse{background-position:3px -93px}
+.RadGrid_Flash .rgEditForm{border-bottom:1px solid #d0d7e5}
+.RadGrid_Flash .rgUpdate{background-position:0 -1800px}
+.RadGrid_Flash .rgCancel{background-position:0 -1850px}
+.RadGrid_Flash .rgDetailTable{border-color:#c0c0c0}
+.RadGrid_Flash .rgExpand{background-position:5px -496px}
+.RadGrid_Flash .rgCollapse{background-position:3px -94px}
+.RadGrid_Flash .rgCommandRow{background:#c4d9f1 0 -2099px repeat-x url('Grid/sprite.gif');color:#333}
+.RadGrid_Flash .rgCommandCell{border:0;padding:0}
+.RadGrid_Flash thead .rgCommandCell{border-bottom:1px solid #c0c0c0}
+.RadGrid_Flash .rgCommandTable{border:1px solid #9eb6ce}
+.RadGrid_Flash .rgCommandTable td{border:0;padding:2px 7px}
+.RadGrid_Flash .rgCommandRow a{color:#5c5c5c;text-decoration:none}
+.RadGrid_Flash .rgAdd{margin-right:3px;background-position:0 -1650px}
+.RadGrid_Flash .rgRefresh{margin-right:3px;background-position:0 -1600px}
+.RadGrid_Flash .rgEdit{background-position:0 -1700px}
+.RadGrid_Flash .rgDel{background-position:0 -1750px}
+.RadGrid_Flash .rgExpXLS,.RadGrid_Flash .rgExpDOC,.RadGrid_Flash .rgExpPDF,.RadGrid_Flash .rgExpCSV{background-image:url('Common/export.gif')}
+.RadGrid_Flash .rgExpXLS{background-position:0 0}
+.RadGrid_Flash .rgExpDOC{background-position:0 -50px}
+.RadGrid_Flash .rgExpPDF{background-position:0 -100px}
+.RadGrid_Flash .rgExpCSV{background-position:0 -150px}
+.rgCellSelectorArea_Flash,.GridRowSelector_Flash{background:#c0c0c0}
+.GridItemDropIndicator_Flash{border-top:1px dashed #c0c0c0}
+.GridToolTip_Flash{border:1px solid #c0c0c0;padding:3px;background:#d7e3f2;color:#333}
+.RadGridRTL_Flash .rgHeader:first-child,.RadGridRTL_Flash th.rgResizeCol:first-child,.RadGridRTL_Flash .rgFilterRow>td:first-child,.RadGridRTL_Flash .rgRow>td:first-child,
+.RadGridRTL_Flash .rgAltRow>td:first-child{border-left-width:1px;padding-left:7px}
+.RadGridRTL_Flash .rgGroupHeader .rgExpand{background-position:-20px -495px}
+.RadGridRTL_Flash .rgExpand{background-position:-20px -496px}
+
+
+
+
+
+
+ div.RadGrid_Flash .rgCommandRow {
+
+	background-image: none;
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash th.rgResizeCol {
+
+	height: 27px;
+
+	background-image: none;
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgHeader, .rgHeader {
+
+	font-weight: bold;
+
+	color: rgb(92, 92, 92);
+
+	font-family: Tahoma;
+
+	font-size: 11px;
+
+	height: 27px;
+
+	background-image: none;
+    /* background-color: rgb(247, 247, 247); */
+
+
+    background: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#f7f7f7));
+    background: -webkit-linear-gradient(#fafafa, #f7f7f7);
+    background: -moz-linear-gradient(top, #fafafa, #f7f7f7);
+    background: -ms-linear-gradient(#fafafa, #f7f7f7);
+    background: -o-linear-gradient(#fafafa, #f7f7f7);
+    background: linear-gradient(#fafafa, #f7f7f7);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#f7f7f7')"; 
+    zoom: 1;
+    position: relative;
+
+}
+
+ div.RadGrid_Flash .rgHeader a {
+
+	font-weight: bold;
+
+	color: rgb(92, 92, 92);
+
+	font-family: Tahoma;
+
+	font-size: 11px;
+
+}
+
+ div.RadGrid_Flash .rgFilterRow td {
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgRow td {
+
+	color: rgb(92, 92, 92);
+
+	font-size: 11px;
+
+	font-family: Tahoma;
+
+	width: 20px;
+
+	height: 27px;
+
+	background-color: rgb(255, 255, 255);
+
+}
+
+ div.RadGrid_Flash .rgSelectedRow td {
+
+	font-size: 11px;
+
+	font-family: Tahoma;
+
+	background-color: rgb(255, 242, 214);
+
+}
+
+ div.RadGrid_Flash .rgActiveRow td {
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+/* ���� ��� ���������� ������*/
+div.RadGrid_Flash .rgHoveredRow td, div.RadGrid_Flash .rgRow:hover td, div.RadGrid_Flash .rgAltRow:hover td {
+
+	background-color: rgb(217, 217, 217);
+
+}
+
+ div.RadGrid_Flash .rgAltRow td {
+
+	color: rgb(92, 92, 92);
+
+	height: 27px;
+
+	font-family: Tahoma;
+
+	font-size: 11px;
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgAltRow {
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgFooter td {
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+ div.RadGrid_Flash .rgPager {
+
+	background-image: none;
+
+	background-color: rgb(247, 247, 247);
+
+}
+
+
+.RadListBox_Flash{font-size:11px;font-family:"Tahoma",Tahoma}
+.RadListBox_Flash .rlbGroup,.RadListBox_Flash .rlbTemplateContainer{border-color:#abc1de;color:#5c5c5c;background-color:white}
+.RadListBox_Flash .rlbCheckAllItems{background-color:#c3d8f1}
+.RadListBox_Flash .rlbCheckAllItemsHovered{color:black;background-color:#c3d8f1}
+.RadListBox_Flash .rlbItem{line-height:27px}
+.RadListBox_Flash .rlbHighlight{background-color:#fff2d6}
+.RadListBox_Flash .rlbItem.rlbHovered{background:#f2f2f2}
+.RadListBox_Flash .rlbItem.rlbSelected{background:#fff2d6}
+.RadListBox_Flash .rlbHeader,.RadListBox_Flash .rlbFooter{border-color:#abc1de;background-image:url('ListBox/rlbHeaderFooter.png');background-color:#f1f2f4}
+.RadListBox_Flash .rlbFooter{background-position:0 -200px;background-color:#fff}
+.RadListBox_Flash .rlbDropClue{background-image:url('ListBox/rlbDropClue.png')}
+.RadListBox_Flash .rlbGroup .rlbDropClueAbove{border-top-color:#8e8e8e}
+.RadListBox_Flash .rlbGroup .rlbDropClueBelow{border-bottom-color:#8e8e8e}
+.RadListBox_Flash .rlbGroup .rlbSelected.rlbDropClueAbove,.RadListBox_Flash .rlbGroup .rlbHovered.rlbDropClueAbove,
+.RadListBox_Flash .rlbGroup .rlbSelected.rlbDropClueBelow,.RadListBox_Flash .rlbGroup .rlbHovered.rlbDropClueBelow{border-color:#8e8e8e}
+.RadListBox_Flash .rlbButtonText{background-image:url('ListBox/rlbSprite.png')}
+.RadListBox_Flash .rlbButton:hover .rlbButtonTL,.RadListBox_Flash .rlbButton:hover .rlbButtonTR,
+.RadListBox_Flash .rlbButton:hover .rlbButtonBL,.RadListBox_Flash .rlbButton:hover .rlbButtonBR{background-image:url('ListBox/rlbButtonHover.png')}
+.RadListBox_Flash .rlbButton .rlbButtonTL,.RadListBox_Flash .rlbButton .rlbButtonTR,
+.RadListBox_Flash .rlbButton .rlbButtonBL,.RadListBox_Flash .rlbButton .rlbButtonBR,
+.RadListBox_Flash .rlbDisabled:hover .rlbButtonTL,.RadListBox_Flash .rlbDisabled:hover .rlbButtonTR,
+.RadListBox_Flash .rlbDisabled:hover .rlbButtonBL,.RadListBox_Flash .rlbDisabled:hover .rlbButtonBR{background-image:url('ListBox/rlbButtonNormal.png')}
+.RadListBox_Flash .rlbButton:hover{color:black}
+.RadListBox_Flash .rlbDisabled,.RadListBox_Flash .rlbDisabled:hover{color:#5c5c5c}
+.RadListBox_Flash .rlbMoveUp .rlbButtonText{background-position:0 0}
+.RadListBox_Flash .rlbMoveUp:hover .rlbButtonText{background-position:-400px 0}
+.RadListBox_Flash .rlbMoveUpDisabled .rlbButtonText,.RadListBox_Flash .rlbMoveUpDisabled:hover .rlbButtonText{background-position:-200px 0}
+.RadListBox_Flash .rlbMoveDown .rlbButtonText{background-position:0 -25px}
+.RadListBox_Flash .rlbMoveDown:hover .rlbButtonText{background-position:-400px -25px}
+.RadListBox_Flash .rlbMoveDownDisabled .rlbButtonText,.RadListBox_Flash .rlbMoveDownDisabled:hover .rlbButtonText{background-position:-200px -25px}
+.RadListBox_Flash .rlbMoveToTop .rlbButtonText{background-position:0 -275px}
+.RadListBox_Flash .rlbMoveToTop:hover .rlbButtonText{background-position:-400px -275px}
+.RadListBox_Flash .rlbMoveToTopDisabled .rlbButtonText,.RadListBox_Flash .rlbMoveToTopDisabled:hover .rlbButtonText{background-position:-200px -275px}
+.RadListBox_Flash .rlbMoveToBottom .rlbButtonText{background-position:0 -300px}
+.RadListBox_Flash .rlbMoveToBottom:hover .rlbButtonText{background-position:-400px -300px}
+.RadListBox_Flash .rlbMoveToBottomDisabled .rlbButtonText,.RadListBox_Flash .rlbMoveToBottomDisabled:hover .rlbButtonText{background-position:-200px -300px}
+.RadListBox_Flash .rlbDelete .rlbButtonText{background-position:0 -50px}
+.RadListBox_Flash .rlbDelete:hover .rlbButtonText{background-position:-400px -50px}
+.RadListBox_Flash .rlbDeleteDisabled .rlbButtonText,.RadListBox_Flash .rlbDeleteDisabled:hover .rlbButtonText{background-position:-200px -50px}
+.RadListBox_Flash .rlbButtonAreaRight .rlbTransferTo .rlbButtonText,.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferFrom .rlbButtonText{background-position:0 -100px}
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferTo .rlbButtonText,.RadListBox_Flash .rlbButtonAreaRight .rlbTransferFrom .rlbButtonText{background-position:0 -75px}
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferFrom:hover .rlbButtonText,.RadListBox_Flash .rlbButtonAreaRight .rlbTransferTo:hover .rlbButtonText{background-position:-400px -100px}
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferTo:hover .rlbButtonText,.RadListBox_Flash .rlbButtonAreaRight .rlbTransferFrom:hover .rlbButtonText{background-position:-400px -75px}
+.RadListBox_Flash .rlbButtonAreaRight .rlbTransferToDisabled .rlbButtonText,.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferFromDisabled .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferFromDisabled:hover .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaRight .rlbTransferToDisabled:hover .rlbButtonText{background-position:-200px -100px}
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferToDisabled .rlbButtonText,.RadListBox_Flash .rlbButtonAreaRight .rlbTransferFromDisabled .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferToDisabled:hover .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaRight .rlbTransferFromDisabled:hover .rlbButtonText{background-position:-200px -75px}
+.RadListBox_Flash .rlbButtonAreaRight .rlbTransferAllTo .rlbButtonText,.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferAllFrom .rlbButtonText{background-position:0 -150px}
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferAllTo .rlbButtonText,.RadListBox_Flash .rlbButtonAreaRight .rlbTransferAllFrom .rlbButtonText{background-position:0 -125px}
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferAllFrom:hover .rlbButtonText,.RadListBox_Flash .rlbButtonAreaRight .rlbTransferAllTo:hover .rlbButtonText{background-position:-400px -150px}
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferAllTo:hover .rlbButtonText,.RadListBox_Flash .rlbButtonAreaRight .rlbTransferAllFrom:hover .rlbButtonText{background-position:-400px -125px}
+.RadListBox_Flash .rlbButtonAreaRight .rlbTransferAllToDisabled .rlbButtonText,.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferAllFromDisabled .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferAllFromDisabled:hover .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaRight .rlbTransferAllToDisabled:hover .rlbButtonText{background-position:-200px -150px}
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferAllToDisabled .rlbButtonText,.RadListBox_Flash .rlbButtonAreaRight .rlbTransferAllFromDisabled .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaLeft .rlbTransferAllToDisabled:hover .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaRight .rlbTransferAllFromDisabled:hover .rlbButtonText{background-position:-200px -125px}
+.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferTo .rlbButtonText,.RadListBox_Flash .rlbButtonAreaTop .rlbTransferFrom .rlbButtonText{background-position:0 -200px}
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferTo .rlbButtonText,.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferFrom .rlbButtonText{background-position:0 -175px}
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferFrom:hover .rlbButtonText,.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferTo:hover .rlbButtonText{background-position:-400px -200px}
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferTo:hover .rlbButtonText,.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferFrom:hover .rlbButtonText{background-position:-400px -175px}
+.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferToDisabled .rlbButtonText,.RadListBox_Flash .rlbButtonAreaTop .rlbTransferFromDisabled .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferFromDisabled:hover .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferToDisabled:hover .rlbButtonText{background-position:-200px -200px}
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferToDisabled .rlbButtonText,.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferFromDisabled .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferToDisabled:hover .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferFromDisabled:hover .rlbButtonText{background-position:-200px -175px}
+.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferAllTo .rlbButtonText,.RadListBox_Flash .rlbButtonAreaTop .rlbTransferAllFrom .rlbButtonText{background-position:0 -250px}
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferAllTo .rlbButtonText,.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferAllFrom .rlbButtonText{background-position:0 -225px}
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferAllFrom:hover .rlbButtonText,.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferAllTo:hover .rlbButtonText{background-position:-400px -250px}
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferAllTo:hover .rlbButtonText,.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferAllFrom:hover .rlbButtonText{background-position:-400px -225px}
+.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferAllToDisabled .rlbButtonText,.RadListBox_Flash .rlbButtonAreaTop .rlbTransferAllFromDisabled .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferAllFromDisabled:hover .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferAllToDisabled:hover .rlbButtonText{background-position:-200px -250px}
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferAllToDisabled .rlbButtonText,.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferAllFromDisabled .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaTop .rlbTransferAllToDisabled:hover .rlbButtonText,
+.RadListBox_Flash .rlbButtonAreaBottom .rlbTransferAllFromDisabled:hover .rlbButtonText{background-position:-200px -225px}
+
+
+.RadMenu_Flash .rmRootGroup,.RadMenu_Flash a.rmLink,.RadMenu_Flash .rmText,.RadMenu_Flash .rmLeftArrow,.RadMenu_Flash .rmRightArrow,
+.RadMenu_Flash .rmTopArrow,.RadMenu_Flash .rmBottomArrow{background-image:url('Menu/rmSprite.png');background-color:transparent}
+.RadMenu_Flash .rmRootGroup{border:1px solid #688caf;background-repeat:repeat-x;background-position:0 -408px;background-color:#BBD9FF}
+.RadMenu_Flash,.RadMenu_Flash a.rmLink{font:normal 12px "Tahoma",Tahoma;color:#5c5c5c;text-decoration: none;line-height:27px}
+.RadMenu_Flash a.rmLink,.RadMenu_Flash .rmText{background-position:0 1050px;background-repeat:no-repeat}
+.RadMenu_Flash a.rmLink:hover,.RadMenu_Flash a.rmFocused,.RadMenu_Flash a.rmSelected{color:#000;background-position:0 -72px}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+.RadMenu_Flash a.rmExpanded,.RadMenu_Flash a.rmExpanded:hover{color:#000;background-position:0 -120px}
+.RadMenu_Flash a.rmDisabled,.RadMenu_Flash a.rmDisabled:hover{color:#8d8d8d}
+.RadMenu_Flash a.rmDisabled:hover,.RadMenu_Flash a.rmDisabled:hover .rmText{background:0}
+.RadMenu_Flash .rmGroup,.RadMenu_Flash .rmMultiColumn,.RadMenu_Flash .rmGroup .rmVertical{border:1px solid #868686;background:white url('Menu/rmVSprite.png') repeat-y -1px 0}.RadMenu_Flash .rmPopup{background:url('Menu/rmVSprite.png') repeat-y -1px 0}.RadMenu_Flash .rmContentTemplate{background:#fff}.RadMenu_Flash .rmTopFix,.RadMenu_Flash .rmBottomFix,.RadMenu_Flash .rmRoundedCorners .rmGroup .rmItem,.RadMenu_Flash .rmRoundedCorners li.rmFirstGroupColumn .rmItem,.RadMenu_Flash .rmRoundedCorners .rmFirstGroupColumn li.rmFirstGroupColumn .rmItem,.RadMenu_Flash_Context.rmRoundedCorners .rmGroup .rmItem{background-image:url('Menu/rmVSprite.png');background-color:#fff;background-repeat:repeat-y;background-position:-2px 0}.RadMenu_Flash li.rmTopFix,.RadMenu_Flash li.rmBottomFix{background-position:-5px 0}.RadMenu_Flash .rmPopup .rmTopFix,.RadMenu_Flash .rmPopup .rmBottomFix{background-image:none}.RadMenu_Flash .rmRoundedCorners .rmScrollWrapContainer .rmGroup,.RadMenu_Flash .rmRoundedCorners .rmGroupColumn .rmItem,.RadMenu_Flash .rmRoundedCorners .rmGroupColumn .rmGroupColumn .rmItem,.RadMenu_Flash .rmRoundedCorners .rmHorizontal .rmItem,.RadMenu_Flash .rmRoundedCorners .rmScrollWrap .rmVertical,.RadMenu_Flash_Context .rmHorizontal.rmGroup,.RadMenu_Flash_Context .rmHorizontal .rmGroup,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrapContainer .rmGroup,.RadMenu_Flash_Context.rmRoundedCorners .rmHorizontal .rmItem,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrap .rmVertical{background-image:none}.RadMenu_Flash .rmScrollWrap{margin-bottom:-1px}.RadMenu_Flash .rmRoundedCorners .rmGroupColumn{background-color:#fff}.RadMenu_Flash .rmBottomLeft,.RadMenu_Flash .rmRoundedCorners .rmScrollWrapContainer,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrapContainer,.RadMenu_Flash_Context.rmRoundedCorners ul.rmGroup,.RadMenu_Flash .rmRoundedCorners ul.rmGroup,.RadMenu_Flash .rmRoundedCorners .rmMultiColumn{background-image:url('Menu/rmRoundedLeft.png');background-color:transparent;background-repeat:no-repeat}.RadMenu_Flash .rmPopup .rmBottomLeft{background-image:url('Menu/rmRoundedLeft.png')}.RadMenu_Flash .rmTopRight,.RadMenu_Flash .rmBottomRight{background-image:url('Menu/rmRoundedRight.png');background-color:transparent;background-repeat:no-repeat}.RadMenu_Flash .rmTopFix,.RadMenu_Flash .rmBottomFix,.RadMenu_Flash .rmRoundedCorners .rmGroup .rmFirst,.RadMenu_Flash_Context.rmRoundedCorners .rmGroup .rmFirst,.rmRoundedCorners_Flash .rmGroup .rmFirst{border-color:#868686}.RadMenu_Flash .rmRoundedCorners .rmScrollWrapContainer .rmTopFix,.RadMenu_Flash .rmRoundedCorners .rmScrollWrapContainer .rmBottomFix,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopFix,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomFix{background:#FFF}.RadMenu_Flash .rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow,.RadMenu_Flash .rmRoundedCorners .rmScrollWrapContainer .rmRightArrow,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrapContainer .rmRightArrow{background-color:#FFF;border:0}.RadMenu_Flash .rmRoundedCorners .rmScrollWrapContainer .rmTopArrow,.RadMenu_Flash .rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopArrow,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow{background-color:#FFF}.RadMenu_Flash .rmSlide .rmScrollWrap{background-image:none}.RadMenu_Flash .rmRootGroup .rmHorizontal{background-image:none}.RadMenu_Flash .rmScrollWrap .rmVertical{border:0}.RadMenu_Flash .rmGroup .rmFirst,.RadMenu_Flash .rmGroup .rmLast{background:0}.RadMenu_Flash .rmGroup .rmLast{padding-bottom:1px}.RadMenu_Flash .rmGroup a.rmLink:hover,.RadMenu_Flash .rmGroup a.rmFocused,.RadMenu_Flash .rmGroup a.rmSelected,.RadMenu_Flash .rmGroup a.rmExpanded{background-position:0 -168px}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+.RadMenu_Flash .rmVertical .rmExpandRight,.RadMenu_Flash_Context .rmGroup .rmExpandRight,.RadMenu_Flash .rmGroup .rmExpandDown {background-position:100% -216px}
+
+.RadMenu_Flash .rmVertical a.rmLink.rmRootLink:hover .rmExpandRight,.RadMenu_Flash .rmVertical a.rmRootLink.rmSelected .rmExpandRight,
+.RadMenu_Flash .rmVertical a.rmRootLink.rmExpanded .rmExpandRight,
+.RadMenu_Flash_rtl .rmVertical a.rmLink.rmRootLink:hover .rmExpandLeft,
+.RadMenu_Flash_rtl .rmVertical a.rmRootLink.rmSelected .rmExpandLeft,
+.RadMenu_Flash_rtl .rmVertical a.rmRootLink.rmExpanded .rmExpandLeft{background-image:url('Menu/rmRootExpand.png');background-position:100% -2px}
+
+.RadMenu_Flash_rtl .rmVertical a.rmLink.rmRootLink:hover .rmExpandLeft{background-position:0 -2px}
+.RadMenu_Flash_rtl .rmVertical a.rmLink.rmRootLink.rmSelected .rmExpandLeft,.RadMenu_Flash_rtl .rmVertical a.rmLink.rmRootLink.rmExpanded .rmExpandLeft{background-position:0 -29px}                                        
+.RadMenu_Flash .rmVertical a.rmLink.rmExpanded.rmRootLink .rmExpandRight,
+.RadMenu_Flash .rmVertical a.rmLink.rmExpanded.rmRootLink:hover .rmExpandRight{background-position:100% -29px}
+
+.RadMenu_Flash .rmToggleHandles.rmHorizontal .rmRootLink .rmExpandTop,.RadMenu_Flash .rmToggleHandles.rmHorizontal .rmRootLink .rmExpandDown,
+.RadMenu_Flash .rmToggleHandles.rmHorizontal .rmRootLink .rmExpandLeft,.RadMenu_Flash .rmToggleHandles.rmHorizontal .rmRootLink .rmExpandRight{padding-right:24px}
+.RadMenu_Flash .rmHorizontal .rmRootLink .rmToggle{margin-left:-24px}.RadMenu_Flash .rmHorizontal .rmRootLink .rmIcon{background-image:url('Menu/rmSprite.png');background-position:50% -388px}@media screen\9{.RadMenu_Flash .rmHorizontal .rmRootLink .rmIcon{background-position:-243px -388px}}.RadMenu_Flash .rmSlide{margin-top:-1px}.RadMenu_Flash .rmLeftArrow,.RadMenu_Flash .rmRightArrow{background-color:#f6f6e8}.RadMenu_Flash .rmLeftArrow,.RadMenu_Flash .rmRightArrow{background-color:#E0E5F5}.RadMenu_Flash .rmLeftArrow{background-position:-8px -312px;border-right:1px solid #B7BDCD}.RadMenu_Flash .rmRightArrow{background-position:-482px -216px;border-left:1px solid #B7BDCD}.RadMenu_Flash .rmTopArrow,.RadMenu_Flash .rmBottomArrow,.RadMenu_Flash .rmGroup .rmLeftArrow,.RadMenu_Flash .rmGroup .rmRightArrow{background-color:#f0f0f0}.RadMenu_Flash .rmTopArrow{border-bottom:1px solid #dcdcdc;background-position:50% -367px}.RadMenu_Flash .rmBottomArrow{border-top:1px solid #dcdcdc;background-position:50% -391px}.RadMenu_Flash .rmSeparator .rmText{border-color:#80ace6 #fff #fff #80ace6}.RadMenu_Flash .rmGroup .rmSeparator .rmText{border-color:#c5c5c5 #fff #fff #c5c5c5}.RadMenu_Flash_rtl .rmBottomLeft,.RadMenu_Flash_rtl .rmRoundedCorners ul.rmGroup,.RadMenu_Flash_rtl .rmRoundedCorners .rmMultiColumn,.RadMenu_Flash .rmRoundedCorners .rmScrollWrapContainer,.RadMenu_Flash .rmScrollWrapContainer .rmBottomLeft,.rmRoundedCorners.RadMenu_Flash_Context_rtl ul.rmGroup,.RadMenu_Flash_Context.rmRoundedCorners .rmScrollWrapContainer,.RadMenu_Flash .rmRoundedCorners .rmPopup{background-image:url('Menu/rmRoundedLeft_rtl.png');background-repeat:no-repeat}.RadMenu_Flash_rtl .rmTopRight,.RadMenu_Flash_rtl .rmBottomRight{background-image:url('Menu/rmRoundedRight_rtl.png')}.RadMenu_Flash_rtl .rmContentTemplate .rmTopRight,.RadMenu_Flash_rtl .rmContentTemplate .rmBottomRight{background-image:url('Menu/rmRoundedRight.png')}.RadMenu_Flash_rtl li.rmTopFix,.RadMenu_Flash_rtl li.rmBottomFix,.RadMenu_Flash_rtl .rmRoundedCorners .rmGroup .rmItem,.rmRoundedCorners.RadMenu_Flash_Context_rtl .rmGroup .rmItem{background-position:101% 0}.RadMenu_Flash_rtl .rmGroup,.RadMenu_Flash_rtl .rmMultiColumn,.RadMenu_Flash_rtl .rmGroup .rmVertical{background-position:101% 0}
+
+.RadMenu_Flash_rtl .rmHorizontal .rmLink.rmRootLink.rmSelected,.RadMenu_Flash_rtl .rmHorizontal .rmLink.rmRootLink.rmExpanded{background-position:100% -144px}
+.RadMenu_Flash_rtl a.rmLink:hover .rmText,.RadMenu_Flash_rtl a.rmFocused .rmText,.RadMenu_Flash_rtl a.rmSelected .rmText{background-position:0 -72px}
+.RadMenu_Flash_rtl .rmVertical a.rmLink.rmRootLink.rmSelected,.RadMenu_Flash_rtl .rmVertical a.rmLink.rmRootLink.rmExpanded{background-position:100% -144px}
+.RadMenu_Flash_rtl .rmRootLink.rmSelected .rmText,.RadMenu_Flash_rtl .rmRootLink.rmSelected:hover .rmText,
+.RadMenu_Flash_rtl .rmRootLink.rmExpanded .rmText,.RadMenu_Flash_rtl .rmRootLink.rmExpanded:hover .rmText{background-position:0 -120px}
+.RadMenu_Flash_rtl a.rmLink:hover .rmExpandLeft,.RadMenu_Flash_rtl a.rmSelected .rmExpandLeft,
+.RadMenu_Flash_rtl a.rmFocused .rmExpandLeft,.RadMenu_Flash_rtl a.rmExpanded .rmExpandLeft{background-position:0 -336px}
+.RadMenu_Flash_rtl .rmRootGroup .rmGroup a.rmLink:hover,.RadMenu_Flash_rtl .rmRootGroup .rmGroup a.rmFocused,
+.RadMenu_Flash_rtl .rmRootGroup .rmGroup a.rmSelected,.RadMenu_Flash_rtl .rmRootGroup .rmGroup a.rmExpanded{background-position:100% -264px}
+.RadMenu_Flash_rtl .rmGroup a.rmLink:hover .rmText,.RadMenu_Flash_rtl .rmGroup a.rmFocused .rmText,.RadMenu_Flash_rtl .rmGroup a.rmSelected .rmText,
+.RadMenu_Flash_rtl .rmGroup a.rmExpanded .rmText{background-position:0 -288px}
+.RadMenu_Flash_Context_rtl .rmVertical .rmExpandLeft,.RadMenu_Flash_rtl .rmRootGroup .rmExpandLeft,.RadMenu_Flash_rtl .rmGroup .rmExpandDown{background-position:0 -312px}
+.RadMenu_Flash_rtl .rmItem .rmLink.rmRootLink,.RadMenu_Flash_rtl .rmGroup.rmVertical .rmLink,.RadMenu_Flash_rtl .rmGroup .rmVertical .rmLink{margin-left:3px}@media screen\9{.RadMenu_Flash_rtl .rmHorizontal .rmItem .rmLink{margin-left:3px}}.RadMenu_Flash_rtl .rmItem .rmText{margin-left:-3px}.RadMenu_Flash_rtl .rmToggleHandles.rmHorizontal .rmRootLink .rmExpandTop,.RadMenu_Flash_rtl .rmToggleHandles.rmHorizontal .rmRootLink .rmExpandDown,.RadMenu_Flash_rtl .rmToggleHandles.rmHorizontal .rmRootLink .rmExpandLeft,.RadMenu_Flash_rtl .rmToggleHandles.rmHorizontal .rmRootLink .rmExpandRight{padding-right:0;padding-left:24px}.RadMenu_Flash_rtl .rmHorizontal .rmRootLink .rmToggle{margin-right:-24px;margin-left:-1px}.RadMenu_Flash_rtl .rmGroup a.rmLink:hover .rmExpandLeft,.RadMenu_Flash_rtl .rmGroup a.rmFocused .rmExpandLeft,.RadMenu_Flash_rtl .rmGroup a.rmSelected .rmExpandLeft,.RadMenu_Flash_rtl .rmGroup a.rmExpanded .rmExpandLeft,.RadMenu_Flash_rtl .rmGroup a.rmLink:hover .rmExpandDown,.RadMenu_Flash_rtl .rmGroup a.rmFocused .rmExpandDown,.RadMenu_Flash_rtl .rmGroup a.rmSelected .rmExpandDown,.RadMenu_Flash_rtl .rmGroup a.rmExpanded .rmExpandDown{background-image:url('Menu/rmSprite.png');background-position:0 -336px}.RadMenu_Flash_Context_rtl .rmGroup a.rmDisabled:hover .rmExpandLeft,.RadMenu_Flash_rtl .rmRootGroup a.rmDisabled:hover .rmExpandLeft{background-image:url('Menu/rmSprite.png');background-position:0 -312px}
+
+ div.RadMenu_Flash .rmGroup .rmItem .rmLink:hover {
+
+	background-image: none;
+
+}
+
+ div.RadMenu_Flash .rmGroup .rmItem .rmDisabled {
+
+	background-image: none;
+
+}
+
+ div.RadMenu_Flash .rmGroup .rmItem .rmDisabled .rmText {
+
+	background-image: none;
+
+}
+
+ div.RadMenu_Flash .rmItem .rmGroup {
+
+	background-image: none;
+
+}
+
+ div.RadMenu_Flash .rmGroup .rmItem .rmLink {
+
+	background-image: none;
+
+}
+
+ div.RadMenu_Flash .rmItem .rmLink .rmExpandDown {
+
+	background-image: none;
+
+}
+
+ div.RadMenu_Flash .rmItem .rmExpanded {
+
+	background-image: none;
+
+}
+
+ div.RadMenu_Flash .rmItem .rmLink {
+
+	background-image: none;
+
+}
+
+ div.RadMenu_Flash .rmRootGroup {
+
+	background-image: none;
+
+}
+
+ div.RadMenu_Flash .rmItem .rmLink .rmExpandDown {
+
+	/*background-color: rgb(255, 255, 255);*/
+
+}
+    div.RadMenu_Flash .rmItem .rmLink .rmExpandDown:hover {
+
+        background-color: rgb(242, 242, 242);
+    }
+    div.RadMenu_Flash .rmItem .rmLink.rmSelected .rmExpandDown {
+      
+	    background-color: rgb(255, 242, 214);
+    }
+
+div.RadMenu_Flash .rmItem {
+    background-color: transparent;
+}
+    div.RadMenu_Flash .rmItem:hover {
+	    background-color: rgb(242, 242, 242);
+    }
+    div.RadMenu_Flash .rmItem .rmExpanded {
+	    background-color: rgb(255, 242, 214);
+    }
+
+
+
+
+
+ div.RadMenu_Flash .rmGroup .rmItem .rmLink:hover {
+
+	background-color: rgb(242, 242, 242);
+
+}
+
+ div.RadMenu_Flash .rmGroup .rmItem .rmLink:hover .rmText {
+
+	background-color: rgb(242, 242, 242);
+
+}
+
+ div.RadMenu_Flash .rmGroup .rmItem .rmExpanded {
+
+	background-color: rgb(255, 242, 214);
+
+}
+
+ div.RadMenu_Flash .rmGroup .rmItem .rmDisabled {
+
+	background-color: rgb(92, 92, 92);
+
+}
+
+ .RadMenu_Flash .rmLink {
+     padding: 0 !important;
+ }
+
+
+/*input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:red;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background: green;
+}*/

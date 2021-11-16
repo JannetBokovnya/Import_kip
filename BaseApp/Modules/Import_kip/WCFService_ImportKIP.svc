@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFService_ImportKIP" CodeBehind="~/App_Code/Import_kip_API/WCFService_ImportKIP.cs" %>
