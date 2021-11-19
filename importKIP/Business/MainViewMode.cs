@@ -420,14 +420,7 @@ namespace ImportKIP.Business
                 if (typeLog == 1)
                 {
 
-                    //by Gaitov 07.05.2015 г.
-                    //Будем вызывать функцию, которая возвращает данные в формате:
-                    //     Статистика по количеству строк в файле:
-                    //     Импортировано	xxx
-                    //     Не заполнено: 
-                    //         «Километраж КИП»	xxx
-                    //         «Потенциал Uт-з (В)»	xxx
-                    //     Будут пропущены	xxx
+                   
 
                     IsShowBusy = true;
                     IsBusyContent = ProjectResources.LoadingDataLog;//"Загрузка  данных лога";
